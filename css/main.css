@@ -1,6 +1,29 @@
 body {
-    margin: 60px auto;
-    width: 70%;
+  background-repeat: repeat;
+  background-color: #324376;
+  color: #586ba4;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+ color: #e8eddf;
+ font-family: 'Nunito Sans', sans-serif;
+ font-size: 65px;
+}
+h2 {
+  color: #1E2749;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 50px;
+}
+h3 {
+  color: #cfdbd5;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 35px;
+}
+p {
+  color: #13293D;
+  font-size: 17px;
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
@@ -19,15 +42,7 @@ a {
 a:hover {
     text-decoration: underline;
 }
-h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-}
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
-}
+
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
