@@ -1,28 +1,28 @@
 body {
   background-repeat: repeat;
-  background-color: #324376;
-  color: #586ba4;
+  background-color: #2B315C;
+  color: #F6F3F0;
   font-size: 20px;
   font-family: 'Roboto', sans-serif;
 }
 
 h1 {
- color: #e8eddf;
+ color: #F6F3F0;
  font-family: 'Nunito Sans', sans-serif;
  font-size: 65px;
 }
 h2 {
-  color: #1E2749;
+  color: #F6F3F0;
   font-family: 'Nunito Sans', sans-serif;
   font-size: 50px;
 }
 h3 {
-  color: #cfdbd5;
+  color: #F6F3F0;
   font-family: 'Nunito Sans', sans-serif;
   font-size: 35px;
 }
 p {
-  color: #13293D;
+  color: #F6F3F0;
   font-size: 17px;
 }
 nav ul, footer ul {
@@ -48,8 +48,8 @@ footer {
     font-size: .8em;
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
+ul.posts {
+    margin: 20px auto 40px;
     font-size: 1.5em;
 }
 
