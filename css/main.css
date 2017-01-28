@@ -45,9 +45,12 @@ a:hover {
 }
 
 footer {
+    margin: -10px;
     background-color: #222751;
     border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+    text-align: center;
+    font-size: .7em;
+    position: relative;
 }
 
 ul.posts {
@@ -60,20 +63,4 @@ ul.posts li {
 }
 * {
   margin: 0;
-}
-
-.page-wrap {
-  min-height: 100%;
-  /* equal to footer height */
-  margin-bottom: -142px; 
-}
-.page-wrap:after {
-  content: "";
-  display: block;
-}
-.site-footer, .page-wrap:after {
-  height: 142px; 
-}
-.site-footer {
-  background: orange;
 }
