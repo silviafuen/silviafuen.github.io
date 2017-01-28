@@ -1,0 +1,34 @@
+.welcome {
+  min-height: 100%;
+  text-align: center;
+}
+
+.name {
+  padding: 25px;
+  width: 65%;
+  height: auto;
+  max-width: 900px;
+}
+
+.inside {
+  padding: 20px;
+  padding-bottom: 50px;
+}
+
+/**.about {
+  background-color: #BBBBBC;
+  height: 100vh;
+  margin: none;
+  text-align: left;
+
+}
+
+#selfie {
+    text-align: right;
+    width: 500px;
+  	height: 500px;
+  	background: #DDD;
+  	-moz-border-radius: 50%;
+  	-webkit-border-radius: 50%;
+  	border-radius: 50%;
+} **/
