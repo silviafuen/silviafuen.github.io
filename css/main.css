@@ -5,6 +5,7 @@ body {
   font-size: 20px;
   font-family: 'Roboto', sans-serif;
   height: 100%;
+  padding: 30px;
 }
 
 h1 {
@@ -46,11 +47,14 @@ a:hover {
 
 footer {
     margin: -10px;
-    background-color: #222751;
-    border-top: 1px solid #d5d5d5;
-    text-align: center;
+    position: absolute;
     font-size: .7em;
-    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #222751;
+    text-align: center;
 }
 
 ul.posts {
@@ -63,4 +67,11 @@ ul.posts li {
 }
 * {
   margin: 0;
+}
+
+.logo {
+  margin: ;
+  position: initial;
+  height: 15%;
+  width: 15%;
 }
