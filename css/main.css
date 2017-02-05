@@ -5,6 +5,10 @@ html,body {
   font-family: 'Roboto', sans-serif;
 }
 
+header {
+  padding-bottom: 90px;
+}
+
 * {
   margin: 0;
   padding: 0;
