@@ -1,6 +1,12 @@
+
+
+
 .welcome {
   min-height: 100%;
+  height: 100vh;
   text-align: center;
+  padding: 20px;
+  padding-bottom: 50px;
 }
 
 .name {
@@ -10,18 +16,29 @@
   max-width: 900px;
 }
 
-.inside {
-  padding: 20px;
-  padding-bottom: 50px;
-}
 
-/**.about {
-  background-color: #BBBBBC;
-  height: 100vh;
-  margin: none;
+.about {
+  height: 75vh;
+  width: 100%;
+  padding: 50px;
   text-align: left;
-
+  background-color: #AAA;
+  opacity: .95;
 }
+
+.skills {
+  height: 80vh;
+  width: 100%;
+  padding: 50px;
+  text-align: left;
+  background-color: #2B315C;
+}
+
+
+
+
+
+/**
 
 #selfie {
     text-align: right;
