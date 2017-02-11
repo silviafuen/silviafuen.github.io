@@ -1,0 +1,31 @@
+html, body {
+  color: #BBB;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: .8rem;
+    margin: .4rem;
+    display: inline-block;
+    border: 1px none;
+    border-radius: .3rem;
+    box-sizing: border-box;
+}
+
+
+button, input[type=submit] {
+  color: #939393;
+  width: 100%;
+  padding: .8rem;
+  margin: .4rem;
+  display: inline-block;
+  border: 1px none;
+  border-radius: .3rem;
+  box-sizing: border-box;
+  background-color: #FFD876;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #FFD469;
+}
