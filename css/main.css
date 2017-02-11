@@ -1,16 +1,29 @@
-html,body {
-  background-color: #272E5C;
+html, body {
+  background-color: #222751;
   color: #F6F3F0;
   font-size: 15px;
   font-family: 'Roboto', sans-serif;
+
+}
+.container {
+  margin: 5rem;
+  margin-top: 0;
+  padding: .5rem;
+}
+
+body {
+  background-color: #272E5C;
+  width: 100%;
+  display: inline-block;
 }
 
 header {
-  padding-bottom: 90px;
+  padding-top: 10px;
+  padding-bottom: 45px;
 }
 
 * {
-  margin: 0;
+  margin: 0px;
   padding: 0;
 }
 
@@ -32,9 +45,10 @@ h3 {
   font-size: 2em;
 }
 
-.logo {
-  margin: 10px;
-  position: initial;
+#logo {
+  margin: -1%;
+  align-items: left;
+  position: sticky;
   height: 15%;
   width: 15%;
 }
@@ -63,19 +77,16 @@ a:hover {
 }
 
 footer {
-  /*position:absolute;
-  bottom:0;
-  width:100%;
-     /* Height of the footer*/
-  position:  relative;
-  padding-right: 1px;
   width: 100%;
-  height:70px;
+  height: 45%;
   background-color:#222751;
+  display: inline-block;
+  padding-right: 5px;
   text-align: right;
-  padding: .5rem;
+  padding: .9rem;
   font-size: .7em;
   bottom: 0;
+
 }
 
 ul.posts {
