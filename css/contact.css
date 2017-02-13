@@ -1,5 +1,6 @@
-html, body {
+ body {
   color: #BBB;
+  background-color: #272E5C;
 }
 
 input, select, textarea {
