@@ -28,9 +28,19 @@
   width: 100%;
   padding: 50px;
   text-align: left;
-  background-color: #2B315C;
+  background-color: #7D8491;/*2B315C*/
 }
 
+#card {
+  background-color: #F1F0EA;
+  width: 100%;
+  padding: .8rem;
+  margin: .4rem;
+  display: inline-block;
+  border: 1px none;
+  border-radius: .3rem;
+  box-sizing: border-box;
+}
 
 /**#selfie {
     text-align: right;
