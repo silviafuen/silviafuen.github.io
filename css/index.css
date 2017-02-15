@@ -24,30 +24,61 @@
 }
 
 .skills {
-  height: 80vh;
+  height: 92vh;
   width: 100%;
-  padding: 50px;
+  padding: 2rem;
   text-align: left;
   background-color: #7D8491;/*2B315C*/
 }
 
-#card {
-  background-color: #F1F0EA;
+.works {
+  height: 97vh;
   width: 100%;
+  padding: 1rem 9.5rem 1rem 9.5rem;
+  text-align: left;
+  background-color: #272E5C;
+}
+
+#card {
+  margin:  2rem;
+  padding: .9rem;
+  background-color: #F1F0EA;
+  height: 30rem;
+  width: 27rem;
+  border-radius: .35rem;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+#card:hover {
+    background-color: #FFD876;
+    opacity: .81;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/*.contained:hover {
+  height: 20rem;
+  width: 27rem;
+  background-color: #F1F0EA;
+  opacity: 1;
+}
+.place {
+  position: absolute;
+  clip: rect(0,35rem,20rem,0);
+}*/
+
+button {
+  color: #939393;
+  width: 15rem;
   padding: .8rem;
   margin: .4rem;
   display: inline-block;
   border: 1px none;
-  border-radius: .3rem;
+  border-radius: .35rem;
   box-sizing: border-box;
+  background-color: #FFD876;
 }
 
-/**#selfie {
-    text-align: right;
-    width: 500px;
-  	height: 500px;
-  	background: #DDD;
-  	-moz-border-radius: 50%;
-  	-webkit-border-radius: 50%;
-  	border-radius: 50%;
-}**/
+button:hover {
+  background-color: #FFD469;
+}
