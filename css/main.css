@@ -1,6 +1,6 @@
 body,html {
   background-color: #222751;
-  color: #F6F3F0;
+  color: #F1F0EA;
   font-size: 15px;
   font-family: 'Roboto', sans-serif;
 
@@ -45,13 +45,13 @@ header {
 }
 
 h1 {
- color: #F6F3F0;
+ color: #F1F0EA;
  font-family: 'Nunito Sans', sans-serif;
  font-size: 4em;
  font-weight: bold;
 }
 h2 {
-  color: #F6F3F0;
+  color: #F1F0EA;
   font-family: 'Nunito Sans', sans-serif;
   font-size: 3em;
   font-weight: bold;
@@ -60,6 +60,12 @@ h3 {
   color: #F6F3F0;
   font-family: 'Nunito Sans', sans-serif;
   font-size: 2em;
+}
+
+h4 {
+    color: #939393;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.5em;
 }
 
 nav {
