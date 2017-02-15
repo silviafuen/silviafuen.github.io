@@ -9,3 +9,13 @@ h1, h2,h3, body {
   text-align: left;
   padding: 3rem;
 }
+
+/**#selfie {
+    text-align: right;
+    width: 500px;
+  	height: 500px;
+  	background: #DDD;
+  	-moz-border-radius: 50%;
+  	-webkit-border-radius: 50%;
+  	border-radius: 50%;
+}**/
