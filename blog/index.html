@@ -1,7 +1,8 @@
 ---
 layout: default
-title: Hank Quinlan's Blog
+title: Silvia Fuentes' Blog Archive
 ---
+<div class="container">
 	<h1>{{ page.title }}</h1>
 	<ul class="posts">
 
@@ -9,3 +10,4 @@ title: Hank Quinlan's Blog
 	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
 	  {% endfor %}
 	</ul>
+</div>
