@@ -1,10 +1,7 @@
 .container {
+  width: 100%;
   text-align: left;
-  margin: 3rem;
-  padding: 3rem;
-  margin-top: -5rem;
-
-
+  padding: 2rem 9rem 2rem 9rem;
 }
 
 #text {
