@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<head>
+  <link rel="stylesheet" type="text/css" href="/css/project.css">
+</head>
+<body>
+<div id="intro">
+  <h2>{{ page.title }}</h2>
+  <p>{{ page.sections[0] | textilize }}</p>
+  <h3>Client: </h3>
+  <p>{{ page.sections[1] | textilize }}</p>
+  <h3>Goals: </h3>
+  <div>{{ page.sections[2] | textilize }}</p>
+  <h3>Tools: </h3>
+  <p>{{ page.sections[3] | textilize }}</p>
+  <hr class="divisor">
+</div>
+  <h3>Process</h3>
+
+  {{ content }}
+
+</body>
