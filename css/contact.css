@@ -24,7 +24,8 @@ button, input[type=submit] {
   border-radius: .3rem;
   box-sizing: border-box;
   background-color: #FFD876;
-  cursor: pointer;
+  box-shadow: 0 .1rem .1rem 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
 }
 
 button:hover {
