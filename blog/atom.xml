@@ -5,10 +5,10 @@ layout: default
 <feed xmlns="http://www.w3.org/2005/Atom">
 
 	<title>Silvia Fuentes's Blog</title>
-	<link href="http://hankquinlan.github.io/blog/atom.xml" rel="self"/>
-	<link href="http://hankquinlan.github.io/blog"/>
+	<link href="http://silviafuen.github.io/blog/atom.xml" rel="self"/>
+	<link href="http://silviafuen.github.io/blog"/>
 	<updated>{{ site.time | date_to_xmlschema }}</updated>
-	<id>http://hankquinlan.github.io/blog</id>
+	<id>http://silviafue.github.io/blog</id>
 	<author>
 		<name>Silvia Fuentes</name>
 		<email>silvia.fuen@icloud.com</email>
@@ -17,7 +17,7 @@ layout: default
 	{% for post in site.posts %}
 		<entry>
 			<title>{{ post.title }}</title>
-			<link href="http://hankquinlan.github.io{{ post.url }}"/>
+			<link href="http://silviafuen.github.io{{ post.url }}"/>
 			<updated>{{ post.date | date_to_xmlschema }}</updated>
 			<id>http://silvaifuen.github.io{{ post.id }}</id>
 			<content type="html">{{ post.content | xml_escape }}</content>
