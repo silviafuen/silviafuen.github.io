@@ -21,25 +21,26 @@ li.contact {
   margin: .5rem;
   padding: .4rem 0 0rem 0;
 }
+dl,dd,dt,h3{
+  display: inline-table;
+}
 
 #container {
   width: 100%;
   background-color: #F1F0EA;
   text-align: left;
-  padding: 2rem 9rem 2rem 9rem;
+  padding: 2rem 9rem 3rem 9rem;
 }
 
 .break {
-  height: 1px;
+  height: .05rem;
   color: #222751;
   background-color: #222751;
   border: 0;
   margin: 0;
   padding: 0;
 }
-#bttn {
-  margin-top: 5rem;
-}
+
 
 .button,button {
   color: #939393;
@@ -68,14 +69,3 @@ a.button {
 
     color: #939393;
 }
-
-
-/**#selfie {
-    text-align: right;
-    width: 500px;
-  	height: 500px;
-  	background: #DDD;
-  	-moz-border-radius: 50%;
-  	-webkit-border-radius: 50%;
-  	border-radius: 50%;
-}**/
