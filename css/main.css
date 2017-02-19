@@ -21,7 +21,6 @@ hr {
 
 .container {
   width: 100%;
-
   padding: 2rem 9rem 2rem 9rem;
 }
 
@@ -91,24 +90,25 @@ nav ul li, footer ul li {
     margin-right: .94rem;
 }
 
-/*nav ul li:hover, footer ul li:hover{
-  text-decoration: none;
-  color: #FFF;
-  padding: .05rem;
-  border: .02rem solid #BBB;
-  border-radius: .09rem;
-  }*/
+a.regular-link {
+    color: #222751;
+    text-decoration: underline;
+  }
 
+a {
+      color: #f7f7f7;
+      text-decoration: none;
+}
 
-a:hover{
+a:hover, a.regular-link:hover{
   color: #BBB;
   text-decoration: none;
     /*text-decoration: .05rem underline #BBB;*/
 }
 
-a {
-    color: #f7f7f7;
-    text-decoration: none;
+a.regular-link:hover{
+  color: #222751;
+  text-decoration: none;
 }
 
 footer {
