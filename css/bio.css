@@ -10,6 +10,15 @@ h1, h2,h3, body {
   padding: 3rem;
 }
 
+.about {
+  height: 75vh;
+  width: 100%;
+  padding: 50px;
+  text-align: left;
+  background-color: #AAA;
+  opacity: .95;
+}
+
 .photo {
   width: 30rem;
   height: auto;
