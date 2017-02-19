@@ -1,15 +1,26 @@
+h1, h2, h3, h4 {
+  color: #2B2D42;
+
+}
+h3 {
+  display: inline;
+}
+
 body {
-  color: #F1F0EA;
-  background-color: #272E5C;
+  color: #2B2D42;
+  background-color: #F1F0EA;
+}
+p {
+  display: inline-block;
+  padding: .2rem 0 .3rem 0;
 }
 
 #intro {
-  height: 100vh;
+  height: 15vh;
   width: 100%;
-  background-color: #272E5C;
   text-align: left;
-  padding: 2rem 9rem 2rem 9rem;
-
+  padding: 0rem 9rem 2rem 9rem;
+  background-color: #F1F0EA;
 }
 
 .divisor {
@@ -21,20 +32,16 @@ body {
   padding: 0;
 }
 
-.container {
+#container {
   width: 100%;
   text-align: left;
+  padding: 1rem 9rem 2rem 9rem;
+  background-color: #F1F0EA;
 }
 
-.image {
- padding: .1rem;
- margin: 1rem;
-}
-
-#image-right {
- float: right;
-}
-
-#image-left {
- float: left;
+.framed {
+  text-align: center;
+  width: 100%;
+  background-color: #D7D7D1;
+  border-radius: .35rem;
 }
