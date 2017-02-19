@@ -2,6 +2,11 @@ html, body {
   font-family: 'Open Sans', sans-serif;
 }
 
+h3.#card {
+  font-size: 2.5rem;
+  color: #F1F0EA;
+}
+
 .welcome {
   min-height: 100%;
   height: 100vh;
@@ -17,22 +22,13 @@ html, body {
   max-width: 900px;
 }
 
-.about {
-  height: 75vh;
-  width: 100%;
-  padding: 50px;
-  text-align: left;
-  background-color: #AAA;
-  opacity: .95;
-}
-
 .skills {
-  opacity: .95;
+  opacity: 1;
   height: 73vh;
   width: 100%;
   padding: 2rem;
   text-align: left;
-  background-color: #7D8491;/*2B315C*/
+  background-color: #B1B1AC;/*2B315C*/
 }
 
 .works {
@@ -43,6 +39,24 @@ html, body {
   background-color: #272E5C;
 }
 
+.p1 {
+  background:
+    linear-gradient(
+      rgba(246, 243, 240, .15),
+      rgba(246, 243, 240, .15)
+    ),
+    url("/assets/posts/2016-12-05-snapchat-filters/filter-use.jpg");
+}
+
+.p2 {
+  background:
+    linear-gradient(
+      rgba(246, 243, 240, .15),
+      rgba(246, 243, 240, .15)
+    ),
+    url("/assets/posts/2016-12-05-snapchat-filters/filter-use.jpg");
+}
+
 #card {
   align-items: center;
   margin: .5rem 1.5rem 1rem  1.5rem;
@@ -51,25 +65,55 @@ html, body {
   width: 33rem;
   border-radius: .35rem;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
+  transition: 0.8s;
 }
 
 #card:hover {
     background-color: #FFD876;
-    opacity: .81;
+    opacity: .80;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-/*.contained:hover {
-  height: 20rem;
-  width: 27rem;
-  background-color: #F1F0EA;
-  opacity: 1;
-}
-.place {
+#card:before{
   position: absolute;
-  clip: rect(0,35rem,20rem,0);
-}*/
+  content:" ";
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display: none;
+  border-radius: .35rem;
+  z-index:0;
+  background-color: rgba(255, 216, 118, 1);
+  opacity: .65;
+
+}
+
+#card:hover:before{
+  display: block;
+}
+
+#card:hover .cover-text {
+  visibility: visible;
+  transition: 0.9s;
+}
+
+.break {
+  height: .05rem;
+  width: 18rem;
+  padding-left: 13rem;
+  color: #222751;
+  background-color: #222751;
+}
+
+.cover-text {
+  text-align: center;
+  position:relative;
+  top: 12rem;
+  visibility:hidden;
+}
+
+
 
 button {
   color: #939393;

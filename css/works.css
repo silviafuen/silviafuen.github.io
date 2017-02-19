@@ -3,6 +3,11 @@ body {
   background-color: #272E5C;
 }
 
+h3, a.p {
+  color: #F1F0EA;
+  text-align: center;
+}
+
 .frame {
   width: 100%;
   text-align: left;
@@ -18,28 +23,106 @@ body {
   padding: 0;
 }
 
+.layer {
+  color: #FFD876;
+}
+
 .break {
-  height: 1px;
+  height: .05rem;
+  width: 35rem;
+  margin-left: 13rem;
   color: #222751;
   background-color: #222751;
-  border: 0;
-  margin: 0;
-  padding: 0;
+}
+
+.p1 {
+  background:
+    linear-gradient(
+      rgba(246, 243, 240, .15),
+      rgba(246, 243, 240, .15)
+    ),
+    url("/assets/posts/2016-12-05-snapchat-filters/filter-use.jpg");
+}
+
+.p2 {
+  background:
+    linear-gradient(
+      rgba(246, 243, 240, .15),
+      rgba(246, 243, 240, .15)
+    ),
+    url("/assets/posts/2016-12-05-snapchat-filters/filter-use.jpg");
+}
+
+.p3 {
+  background:
+    linear-gradient(
+      rgba(246, 243, 240, .15),
+      rgba(246, 243, 240, .15)
+    ),
+    url("/assets/posts/2016-12-05-snapchat-filters/filter-use.jpg");
+}
+
+
+#card:before{
+  position: absolute;
+  content:" ";
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display: none;
+  border-radius: .35rem;
+  z-index:0;
+  background-color: rgba(255, 216, 118, 1);
+  opacity: .65;
+  transition: 0.8s;
+
+}
+
+#card:hover:before{
+  display: block;
 }
 
 #card {
+  background:
+    linear-gradient(
+      rgba(246, 243, 240, .25),
+      rgba(246, 243, 240, .25)
+    ),
+    url("/assets/posts/2016-12-05-snapchat-filters/filter-use.jpg");
+  background-size: 45%;
   align-items: center;
   margin:  1rem 0 1.5rem 0;
-  background-color: #F1F0EA;
+  padding-top: 2rem;
   height: 18rem;
   width: 61rem;
   border-radius: .35rem;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
+  transition: 0.8s;
+  position: relative;
 }
 
+
+
 #card:hover {
-    background-color: #FFD876;
-    opacity: .81;
+    background-color: rgba(255, 216, 118, .80);
+    opacity: .90;
+    transition: 0.9s;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
+
+.cover-text {
+  text-align: center;
+  position:relative;
+  visibility:visible;
+}
+
+a.regular-link:hover {
+    color: #272E5C;
+    text-decoration: none;
+  }
+
+  #card:hover .cover-text {
+    visibility: visible;
+    transition: .9s;
+  }
