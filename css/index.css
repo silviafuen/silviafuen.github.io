@@ -24,11 +24,18 @@ h3.#card {
 
 .skills {
   opacity: 1;
-  height: 73vh;
+  height: 78vh;
   width: 100%;
   padding: 2rem;
   text-align: left;
   background-color: #B1B1AC;/*2B315C*/
+}
+
+.icon {
+  padding:1rem;
+  padding-bottom: 7rem;
+  text-align: left;
+  width: 17%;
 }
 
 .works {
