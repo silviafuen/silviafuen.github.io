@@ -21,8 +21,8 @@ li.contact {
   margin: .5rem;
   padding: .4rem 0 0rem 0;
 }
-dl,dd,dt,h3{
-  display: inline-table;
+dt,dd{
+  display: inline;
 }
 
 #container {
