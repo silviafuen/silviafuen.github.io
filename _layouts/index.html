@@ -2,40 +2,52 @@
 	<html lang="en">
 		<head>
 			{% include analytics.js %}
-			<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
 			<title>{{ page.title }}</title>
-			<!-- link to main stylesheet -->
-			<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-			<link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.css">
-			<link rel="stylesheet" type="text/css" href="/css/index.css">
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
+			<meta charset="utf-8">
 			<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700|Open+Sans" rel="stylesheet">
+			<link href="/css/index.css" rel="stylesheet">
+			<link href="/css/main.css" rel="stylesheet">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" ></script>
 			<link rel="shortcut icon" href="favicon.ico" />
-
-		</head>
-		<header>
-			<div class="nav navbar-right">
-				<div class="navbar-inner">
-					<nav>
-						<ul>
-								<li><a href="/bio">bio</a></li>
-								<li><a href="/resume">resume</a></li>
-								<li><a href="/blog">work</a></li>
-								<li><a href="/contact">contact</a></li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-		</header>
+			</head>
 		<body>
-			<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-			<script src="bootstrap/js/bootstrap.js"></script>
+			<header>
+				<nav class="navbar navbar-toggleable-sm justify-content-center">
+			        <button class="navbar-toggler navbar-toggler-right body-text" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+			           -
+			        </button>
+			        <div class="navbar-collapse collapse" id="collapsingNavbar3">
+			            <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+			                <li class="nav-item">
+			                    <a class="nav-link body-text" href="/bio">Bio</a>
+			                </li>
+			                <li class="nav-item">
+			                    <a class="nav-link body-text" href="/resume">Resume</a>
+			                </li>
+			                <li class="nav-item">
+			                    <a class="nav-link body-text" href="/blog">Projects</a>
+			                </li>
+											<li class="nav-item">
+			                    <a class="nav-link body-text" href="/contact">Contact</a>
+			                </li>
+			            </ul>
+			        </div>
+			    </nav>
+			</header>
+
 			{{ content }}
 
 			<!-- /.container -->
-		</body>
+
+
+
 
 	{% include footer.html %}
-
-
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="bootstrap/js/bootstrap.js"></script>
+	</body>
 </html>
