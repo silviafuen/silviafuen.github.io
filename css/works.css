@@ -1,9 +1,19 @@
-body {
+body,html {
   color: #F1F0EA;
   background-color: #272E5C;
 }
 
-h3, a.p {
+.list-link:hover {
+      color: #BBB;
+      text-decoration: none;
+}
+
+.list-link {
+  color: #F9F3F0;
+  text-decoration: underline;
+    /*text-decoration: .05rem underline #BBB;*/
+}
+h3, {
   color: #F1F0EA;
   text-align: center;
 }
