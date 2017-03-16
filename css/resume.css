@@ -2,6 +2,9 @@ h1, h2,h3, h4, body {
     color: #2B2D42;
 }
 
+h1, h2, h3, h4, p {
+  padding: .25rem;
+}
 
 ul.contact, a.contact {
     color: #222751;
@@ -9,27 +12,10 @@ ul.contact, a.contact {
     padding: 1rem 5rem 0 1rem;
     list-style: none;
 }
+
 li.contact {
     display: inline;
     margin-right: .94rem;
-}
-
-
-.list {
-  font-size: .9rem;
-  font-family: 'Roboto', sans-serif;
-  margin: .5rem;
-  padding: .4rem 0 0rem 0;
-}
-dt,dd{
-  display: inline;
-}
-
-#container {
-  width: 100%;
-  background-color: #F1F0EA;
-  text-align: left;
-  padding: 2rem 9rem 3rem 9rem;
 }
 
 .break {
@@ -42,7 +28,15 @@ dt,dd{
 }
 
 
-.button,button {
+.list {
+  font-size: .9rem;
+  font-family: 'Roboto', sans-serif;
+  margin: 0 .4rem .4rem .4rem;
+  padding: .2rem 0 .2rem 0;
+}
+
+
+button {
   color: #939393;
   width: 15rem;
   padding: .8rem;
