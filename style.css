@@ -1,0 +1,95 @@
+body,.home {
+  background-color: #525174;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: white;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.container {
+  background-color: #3D405B;
+  border: 25px solid #3D405B;
+  height: 100%;
+  color: white;
+  text-align: center;
+}
+
+/*************BREADCRUMBS***************/
+ul.breadcrumbs {
+  text-align: left;
+  font-family: 'Noto Sans KR', sans-serif;
+  list-style: none;
+  padding: 5px;
+  margin-left: auto;
+}
+ul.breadcrumbs li {
+  display: inline;
+  font-size: 20px;
+}
+ul.breadcrumbs li+li::before{
+  color: #E07A5F;
+  padding: 5px;
+  content: ">\00a0";
+}
+ul.breadcrumbs li a{
+  color: #D5D1D6;
+  text-decoration: none;
+}
+ul.breadcrumbs li a:hover{
+  color: #E07A5F;
+  text-decoration: none;
+}
+ul.breadcrumbs li {
+  color: #FFF;
+}
+/***********************************/
+
+ .hidden {
+  display: none;
+  text-align: center;
+  align-items: center;
+}
+
+#caption {
+  color: white;
+  text-align: center;
+}
+button {
+  color: #fff;
+  background-color: #D5DCF9;
+  width: 100%;
+  border: 2px solid #D5DCF9;
+  margin: 10px 2px;
+  padding: 15px 15px;
+  border-radius: 40px;
+}
+.main {
+  text-align: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#onclick {
+  width: 33%;
+}
+/******GOT7 COLOR CODING******/
+#jb {
+  color: #8EB6FF;
+}
+#mk {
+  color: #DB504A;
+}
+#jw {
+  color: #FF90B3;
+}
+#jy {
+  color: #C6F489;
+}
+#yj {
+  color: #F7A278;
+}
+#bb {
+  color: #45AF3A;
+}
+#yg {
+  color: #E3B505;
+}

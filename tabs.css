@@ -1,0 +1,121 @@
+body,.home {
+  background-color: #525174;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: white;
+}
+
+/*************BREADCRUMBS***************/
+ul.breadcrumbs {
+  text-align: left;
+  list-style: none;
+  padding: 5px;
+  margin-left: auto;
+}
+ul.breadcrumbs li {
+  display: inline;
+  font-size: 20px;
+}
+ul.breadcrumbs li+li::before{
+  color: #E07A5F;
+  padding: 10px;
+  content: ">\00a0";
+}
+ul.breadcrumbs li a{
+  color: #D5D1D6;
+  text-decoration: none;
+}
+ul.breadcrumbs li a:hover{
+  color: #E07A5F;
+  text-decoration: none;
+}
+ul.breadcrumbs li {
+  color: #FFF;
+}
+/***********************************/
+/*************DIV TABLE**************/
+.div-table {
+
+  display: table;
+  width: 100%;
+  border-spacing: 5px; /* cellspacing:poor IE support for  this */
+}
+.div-table-row {
+
+  display: table-row;
+  width: 100%;
+  clear: both;
+}
+.div-table-col {
+  float: left;
+  /* fix for  buggy browsers */
+  display: table-column;
+  margin: 2px;
+  width: 30%;
+}
+/*********************************/
+.container {
+  background-color: #3D405B;
+  border: 25px solid #3D405B;
+  height: 100%;
+  color: white;
+  text-align: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.lyrics {
+  background-color: #EDEFF9;
+  border: 25px solid #EDEFF9;
+  height: 100%;
+  color: white;
+  text-align: center;
+  width: 100%;
+  margin: 10px;
+}
+
+.button {
+  text-align: center;
+  color: #084C61;
+  background-color: #D5DCF9;
+  height: 100%;
+  border: 5px solid #D5DCF9;
+  border-radius: 39px;
+}
+a:hover {
+  color: white;
+}
+
+.player {
+  padding: 10px;
+}
+
+#caption {
+  margin: 2%;
+}
+
+li {
+  display: inline;
+  padding: 1px 5px;
+}
+/******GOT7 COLOR CODING******/
+#jb {
+  color: #8EB6FF;
+}
+#mk {
+  color: #DB504A;
+}
+#jw {
+  color: #FF90B3;
+}
+#jy {
+  color: #C6F489;
+}
+#yj {
+  color: #F7A278;
+}
+#bb {
+  color: #45AF3A;
+}
+#yg {
+  color: #E3B505;
+}
