@@ -1,13 +1,16 @@
 ---
-layout: default
-title: Silvia Fuentes' Blog Archive
+layout: works
+title: Previous Projects
 ---
-<div class="container">
+<div class="container-fluid">
 	<h1>{{ page.title }}</h1>
+	<p> A few of the projects that I've enjoyed working on and the procress that was taken with each. My most recent endevour, is making
+	this site responsive. So feel free to comeback and take a look to see how that works out!</p>
+	<hr class="divider">
 	<ul class="posts">
 
 	  {% for post in site.posts %}
-	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+	    <li><span>{{ post.date | date_to_string }}</span> » <a class="list-link" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
 	  {% endfor %}
 	</ul>
 </div>
