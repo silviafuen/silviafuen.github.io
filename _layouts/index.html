@@ -19,13 +19,6 @@
 		h1 {
 			color: #fff;
 		}
-		.content-projects {
-			background-color: #fff;
-			height: 100%;
-		}
-		.projects-content {
-			padding: 4% 8% 8% 8%;
-		}
 		.content-title {
 			height: 50vh;
 			background-color: #E4F0F0;
@@ -37,7 +30,36 @@
 			background-color: #BED7D8;
 			padding: 2% 5% 2% 4%;
 		}
+		.content-projects {
+			background-color: #fff;
+			height: 100%;
+		}
+		.projects-content {
+			padding: 4% 8% 1% 8%;
+		}
+		.projects-link {
+			padding-left: 4%;
+		}
+		.content-div {
+			padding-bottom: 3%;
+		}
+
+		.content-bio {
+			background-color: #E4F0F0;
+			padding: 4% 8% 4% 8%;
+			height: 100%;
+		}
+		.frame-bio {
+	    background-color: #E4F0F0;
+	    opacity: .8;
+	    padding: 1% 5% 1% 5%;
+	  }
+
 	</style>
+	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+	<script>
+		window.sr = ScrollReveal();
+	</script>
 </head>
 <!--[ ]-->
 
@@ -57,6 +79,11 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	<script>
+		sr.reveal('.card0');
+		sr.reveal('.card1');
+	</script>
+
 </body>
 
 </html>
