@@ -49,9 +49,9 @@
     text-decoration: none;
   }
   .frame {
-    background-color: #E4F0F0;
+    background-color: #fff;
     opacity: .8;
-    padding: 2%;
+    padding: 2% 5% 5% 5%;
   }
   span {
     font-family: 'Lato', sans-serif;
