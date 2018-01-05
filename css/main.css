@@ -1,4 +1,4 @@
-  @import url('https://fonts.googleapis.com/css?family=Lato:300,400|Source+Sans+Pro:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Playfair+Display:400,600,900');
 /*----[HEADER]----*/
   header {
     height: 100%;
@@ -11,7 +11,7 @@
 
 /*----[BODY]----*/
   body {
-    background-color: #99BABC;
+    background-color: #EDBF8E;
     color: #161616;
     height: 100%;
   }
@@ -19,22 +19,33 @@
   h2,
   h3,
   h4 {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 600;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
   }
   h1 {
+    font-size: 275%;
     color: #979797;
   }
   h2 {
-    color: #ADD1D3;
+    font-size: 225%;
+    color: #DBA367;
   }
   h3{
-    color: #99BABC;
+    font-size: 185%;
+    color: #BA7730;
+  }
+  h4{
+    font-size: 150%;
+    color: #995C1B;
   }
   p,caption {
     color: #161616;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
+  }
+  span {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
   }
   .text-link{
     text-decoration: underline;
@@ -50,17 +61,13 @@
   }
   .frame {
     background-color: #fff;
-    opacity: .8;
+    opacity: .9;
     padding: 2% 5% 5% 5%;
-  }
-  span {
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
   }
 
   .content-body {
     background-color: #fff;
-    padding: 3% 6% 9% 6%;
+    padding: 3% 6% 7% 6%;
   }
 /*---------------*/
 
