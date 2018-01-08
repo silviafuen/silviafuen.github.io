@@ -27,15 +27,15 @@
     color: #979797;
   }
   h2 {
-    font-size: 225%;
+
     color: #DBA367;
   }
   h3{
-    font-size: 185%;
+
     color: #BA7730;
   }
   h4{
-    font-size: 150%;
+
     color: #995C1B;
   }
   p,caption {
@@ -61,7 +61,7 @@
   }
   .frame {
     background-color: #fff;
-    opacity: .9;
+    opacity: 1;
     padding: 2% 5% 5% 5%;
   }
 
