@@ -11,7 +11,7 @@
 
 /*----[BODY]----*/
   body {
-    background-color: #EDBF8E;
+    background-color: #B9DEE0;
     color: #161616;
     height: 100%;
   }
@@ -24,15 +24,15 @@
   }
   h1 {
     font-size: 275%;
-    color: #979797;
+    color: #ADD1D3;
   }
   h2 {
 
-    color: #DBA367;
+    color: #69B2B5;
   }
   h3{
 
-    color: #BA7730;
+    color: #3C7072;
   }
   h4{
 
@@ -52,11 +52,11 @@
     color: #161616;
   }
   a, .nav-link, .nav-item {
-    color: #979797;
+    color: #4A4A4A;
     text-decoration: underline;
   }
   a:hover, .nav-link:hover{
-    color: #4A4A4A;
+    color: #161616;
     text-decoration: none;
   }
   .frame {
@@ -81,6 +81,7 @@
   }
 
   footer {
+
     bottom: 0;
     width: 100%;
     display: flex;
