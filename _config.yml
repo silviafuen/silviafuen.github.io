@@ -1,5 +1,7 @@
 name: Silvia Fuentes, Student
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title.html
+plugins_dir:
+  - jekyll-sitemap
 gems:
   - jekyll-sitemap
