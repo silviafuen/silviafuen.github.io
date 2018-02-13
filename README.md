@@ -11,7 +11,7 @@ I make my updates to the development one, test them locally and then push them l
 audience it should have. The menu goes from 2 on the index to 3 on the projects page, because I didn't find it useful to have a link back to the index on the index page itself. It's like getting directions to your house, while sitting in your living room.</p>
 
 ## Resume
-<span>View a pdf of [my resume](assets/silvia-fuentes-visual-designer-resume.pdf) or go ahead and read it here, I had fun playing with markdown to try this out. </span>
+<span>View a pdf of [my resume](assets/silvia-fuentes-designer-resume-2018.pdf) or go ahead and read it here, I had fun playing with markdown to try this out. </span>
 
 ### Skills
 #### Design
