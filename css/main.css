@@ -1,100 +1,154 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Playfair+Display:400,600,900');
 /*----[HEADER]----*/
-  header {
-    height: 100%;
-    background-color: #fff;
-  }
-  .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-  }
-  .carousel-control-prev-icon {
+
+header {
+  height: 100%;
+  background-color: #fff;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.carousel-control-prev-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
-  }
-  .carousel-control-next-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
-    }
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
 /*---------------*/
 
 /*----[BODY]----*/
-  body {
-    background-color: #B9DEE0;
-    color: #161616;
-    height: 100%;
-  }
-  h1,
-  h2,
-  h3{
-    font-family: 'Playfair Display', serif;
-    font-weight: 900;
-  }
-  h1 {
-    font-size: 275%;
-    color: #ADD1D3;
-  }
-  h2 {
-    color: #69B2B5;
-  }
-  h3{
-    color: #3C7072;
-  }
-  h4{
-    font-size: 110%;
-    font-weight:bold;
-    text-transform:uppercase;
-    margin-bottom: -2.5px;
-    text-align: float;
-    font-family: 'Open Sans', sans-serif;
-    color: #1A4D4F;
-  }
-  p,caption {
-    color: #161616;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    font-size: 98%;
-  }
-  span {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-  }
-  em{
-    color:#7A7F7F;
-  }
-  .text-link{
-    text-decoration: underline;
-    color: #161616;
-  }
-  a, .nav-link, .nav-item {
-    color: #4A4A4A;
-    text-decoration: underline;
-  }
-  a:hover, .nav-link:hover{
-    color: #161616;
-    text-decoration: none;
-  }
-  .frame {
-    background-color: #fff;
-    opacity: 1;
-    padding: 2% 5% 5% 5%;
-  }
-  .content-body {
-    background-color: #fff;
-    padding: 3% 6% 7% 6%;
-  }
+
+body {
+  background-color: #B9DEE0;
+  color: #161616;
+  height: 100%;
+}
+.row{
+  padding-bottom: 4%;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 275%;
+  color: #ADD1D3;
+}
+
+h2 {
+  color: #69B2B5;
+}
+
+h3 {
+  color: #3C7072;
+}
+
+h4 {
+  font-size: 110%;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: -2.5px;
+  text-align: float;
+  font-family: 'Open Sans', sans-serif;
+  color: #1A4D4F;
+}
+
+p, caption {
+  color: #161616;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 98%;
+}
+
+span {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+em {
+  color: #7A7F7F;
+}
+
+.text-link {
+  text-decoration: underline;
+  color: #161616;
+}
+
+a, .nav-link, .nav-item {
+  color: #4A4A4A;
+  text-decoration: underline;
+}
+
+a:hover, .nav-link:hover {
+  color: #161616;
+  text-decoration: none;
+}
+
+.frame {
+  background-color: #fff;
+  opacity: 1;
+  padding: 2% 5% 5% 5%;
+}
+
+.content-body {
+  background-color: #fff;
+  padding: 3% 6% 7% 6%;
+}
 
 /*---------------*/
 
-/*----[FOOTER]----*/
+/*----[POP-UP]----/
+/* Popup container - can be anything you want */
+
+.popup-trigger,.popup-trigger2,.popup-trigger3 {
+}
+
+.popup,.popup2, .popup3{
+  display: none;
+  position:sticky;
+  width: 100%;
+  margin-left: 0%;
+  padding: 30px 10px;
+  background: #fff;
+  color: #333;
+  border: 1px solid #ddd;
+
+}
+
+.popup-mobile,.popup-mobile2,.popup-mobile3 {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 30px 0 0;
+  width: 100%;
+}
+
+.popup-btn-close, .popup-btn-close2, .popup-btn-close3{
+  position: absolute;
+  top: 8px;
+  right: 14px;
+  color: #69B2B5;
+  font-size: 1
+}
+
+  /*---------------*/
+  /*----[FOOTER]----*/
   .footer-links {
     text-align: center;
     padding: 2% 0 1% 0;
   }
-  .icon-link{
+  .icon-link {
     width: 45%;
   }
-
   footer {
     bottom: 0;
     width: 100%;
     display: flex;
   }
-/*---------------*/
+  /*---------------*/
