@@ -1,0 +1,123 @@
+/**** DOC STYLE ****/
+html,
+body {
+  background-color: #fafafa;
+  color: #454545;
+}
+/************************************/
+
+/**** TYPOGRAPHY ****/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Playfair+Display:400,600,900');
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 275%;
+  color: #fff;
+}
+
+h2 {
+  color: #fff;
+  /*color: #69B2B5;*/
+}
+
+p,body {
+  color: #454545;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+
+.text-link {
+  text-decoration: underline;
+  color: #DBA367;
+}
+.text-link:hover {
+  text-decoration: underline;
+  color: #EDBF8E;
+}
+
+.btn-outline-info:hover {
+  background-color: #69B2B5;
+}
+/************************************/
+
+/**** HEADER + FOOTER ****/
+
+header, footer {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+footer {
+  margin-top: 3%;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #2E2E2E;
+}
+
+.nav-link:hover {
+  color: #7C7C7C;
+}
+
+nav a.current {
+  text-decoration: underline;
+}
+
+/************************************/
+
+/**** JUMBOTRON ****/
+.intro-bg {
+  height: 32vh;
+  background-color: #B9DEE0;
+}
+
+.intro-div {
+  padding: 2% 0% 0% 2%;
+  margin: 4%;
+  background-color: #69B2B5;
+}
+/************************************/
+
+/**** CONTENT CARDS ****/
+.content-body {
+  height: 100%;
+  padding: 3% 6% 7% 6%;
+}
+
+.content-divs {
+
+  margin: 8% 2% 6% 2%;
+}
+
+/**** ABOUT ME CARD ****/
+.content-body {
+  height: 100%;
+  padding: 3% 6% 7% 6%;
+}
+/************************************/
+
+/****VISUALS + PROTOTYPE CARDS ****/
+.other1, .other {
+  margin-bottom: 4%;
+  height: 32vh;
+  padding: 7%;
+  text-align: center;
+}
+.other1 {
+  background-color: #C86F85;
+}
+.other {
+  background-color: #5045B1;
+
+}
+.other1:hover, .other:hover {
+  background-color:rgba(192,192,192,0.3);
+}
+/************************************/
