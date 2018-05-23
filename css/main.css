@@ -1,154 +1,126 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Playfair+Display:400,600,900');
-/*----[HEADER]----*/
-
-header {
-  height: 100%;
-  background-color: #fff;
-}
-
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
-
-.carousel-control-prev-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
-}
-
-.carousel-control-next-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
-}
-
-/*---------------*/
-
-/*----[BODY]----*/
-
+/**** DOC STYLE ****/
+html,
 body {
-  background-color: #B9DEE0;
-  color: #161616;
-  height: 100%;
+  background-color: #fafafa;
+  color: #454545;
 }
-.row{
-  padding-bottom: 4%;
+img {
+  width: 75%;
+  text-align: right;
 }
+/************************************/
+
+/**** TYPOGRAPHY ****/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Playfair+Display:400,600,900');
 
 h1, h2, h3 {
   font-family: 'Playfair Display', serif;
-  font-weight: 900;
+  font-weight: 600;
 }
 
 h1 {
   font-size: 275%;
-  color: #ADD1D3;
+  color: #fff;
 }
 
 h2 {
-  color: #69B2B5;
-}
-
-h3 {
   color: #3C7072;
 }
 
-h4 {
-  font-size: 110%;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: -2.5px;
-  text-align: float;
-  font-family: 'Open Sans', sans-serif;
-  color: #1A4D4F;
-}
-
-p, caption {
-  color: #161616;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  font-size: 98%;
-}
-
-span {
+p,body {
+  color: #454545;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
 }
 
-em {
-  color: #7A7F7F;
-}
 
 .text-link {
   text-decoration: underline;
-  color: #161616;
+  color: #DBA367;
+}
+.text-link:hover {
+  text-decoration: underline;
+  color: #EDBF8E;
 }
 
-a, .nav-link, .nav-item {
-  color: #4A4A4A;
+.btn-outline-info:hover {
+  background-color: #69B2B5;
+}
+/************************************/
+
+/**** HEADER + FOOTER ****/
+
+header, footer {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+footer {
+  margin-top: 3%;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #2E2E2E;
+}
+
+.nav-link:hover {
+  color: #7C7C7C;
+}
+
+nav a.current {
   text-decoration: underline;
 }
 
-a:hover, .nav-link:hover {
-  color: #161616;
-  text-decoration: none;
+/************************************/
+
+/**** JUMBOTRON ****/
+.intro-bg {
+  height: 32vh;
+  background-color: #B9DEE0;
 }
 
-.frame {
-  background-color: #fff;
-  opacity: 1;
-  padding: 2% 5% 5% 5%;
+.intro-div {
+  padding: 2% 0% 0% 2%;
+  margin: 4%;
+  background-color: #69B2B5;
 }
+/************************************/
 
+/**** CONTENT CARDS ****/
 .content-body {
-  background-color: #fff;
+  height: 100%;
   padding: 3% 6% 7% 6%;
 }
 
-/*---------------*/
+.content-divs {
 
-/*----[POP-UP]----/
-/* Popup container - can be anything you want */
-
-.popup-trigger,.popup-trigger2,.popup-trigger3 {
+  margin: 8% 2% 6% 2%;
 }
 
-.popup,.popup2, .popup3{
-  display: none;
-  position:sticky;
-  width: 100%;
-  margin-left: 0%;
-  padding: 30px 10px;
-  background: #fff;
-  color: #333;
-  border: 1px solid #ddd;
+/**** ABOUT ME CARD ****/
+.content-body {
+  height: 100%;
+  padding: 3% 6% 7% 6%;
+}
+/************************************/
+
+/****VISUALS + PROTOTYPE CARDS ****/
+.other1, .other {
+  margin-bottom: 4%;
+  height: 32vh;
+  padding: 7%;
+  text-align: center;
+}
+.other1 {
+  background-color: #C86F85;
+}
+.other {
+  background-color: #5045B1;
 
 }
-
-.popup-mobile,.popup-mobile2,.popup-mobile3 {
-  position: relative;
-  top: 0;
-  left: 0;
-  margin: 30px 0 0;
-  width: 100%;
+.other1:hover, .other:hover {
+  background-color:rgba(192,192,192,0.3);
 }
-
-.popup-btn-close, .popup-btn-close2, .popup-btn-close3{
-  position: absolute;
-  top: 8px;
-  right: 14px;
-  color: #69B2B5;
-  font-size: 1
-}
-
-  /*---------------*/
-  /*----[FOOTER]----*/
-  .footer-links {
-    text-align: center;
-    padding: 2% 0 1% 0;
-  }
-  .icon-link {
-    width: 45%;
-  }
-  footer {
-    bottom: 0;
-    width: 100%;
-    display: flex;
-  }
-  /*---------------*/
+/************************************/
