@@ -3,110 +3,82 @@
 
 <head>
 	<title>{{page.title}}</title>
+	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<link rel="shortcut icon" href="assets/icons/favi.ico" type="image/x-icon" />
-	<!--[INDEX ONLY - STYLING]-->
-	<style>
-		body {
-			background-color: #B9DEE0;
-		}
-		header {
-			background-color: rgba(0,0,0,0.001);
-		}
-
-		h1 {
-			color: #fff;
-		}
-
-		.content-title {
-			height: 50vh;
-			background-color: rgba(0,0,0,0.001);
-		}
-
-		.title-content {
-			padding: 7% 0% 0% 8%;
-		}
-
-		.green-light {
-			background-color: #69B2B5;
-			padding: 2% 5% 2% 4%;
-		}
-
-		.content-projects {
-			background-color: #fff;
-			height: 100%;
-		}
-
-		.projects-content {
-			padding: 4% 8% 1% 8%;
-		}
-
-		.projects-link {
-			padding-left: 4%;
-		}
-
-		.content-div {
-			padding-bottom: 3%;
-		}
-
-		.content-bio {
-			background-color: #E4F0F0;
-			padding: 4% 8% 4% 8%;
-			height: 100%;
-		}
-
-		.frame-bio {
-			background-color: #F5DABD;
-			opacity: .8;
-			padding: 1% 5% 1% 5%;
-		}
-	</style>
 	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-<!--	{% include analytics.html %}
-	- Global site tag (gtag.js) - Google Analytics
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-92739231-1"></script>-->
-	<!-- Scroll Reveal -->
 	<script>
-		window.dataLayer = window.dataLayer || [];
-
-		function gtag() {
-			dataLayer.push(arguments);
-		}
-		gtag('js', new Date());
-		gtag('config', 'UA-92739231-1');
-
 		window.sr = ScrollReveal();
-
 	</script>
+	{% include analytics.html %}
+	<style>
+h3 {
+ font-family: 'Open Sans', sans-serif;
+		text-transform: uppercase;
+	  font-weight: 600;
+		font-size: 24px;
+	}
+
+	p {
+	  color: #454545;
+	 font-family: 'Open Sans', sans-serif;
+	  font-weight: 300;
+	}
+	.case-study {
+	  width: 100%;
+	  text-align: left;
+	  padding: 0 24% 12% 24%;
+	}
+	</style>
 </head>
 <!--[ ]-->
 
 <body class="container-fluid">
 	<!--[HEADER - navigation]-->
-	{% include index-header.html %}
+	{% include header.html %}
 
 	<!--[BODY - content]-->
 
 	{{ content }}
 
-
 	<!--[FOOTER - external links]-->
 	{% include footer.html %}
 
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<!-- jQuery, Popper.js,Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 	<script src="script/pop-up.js"></script>
 	<script>
-		sr.reveal('.card0');
-		sr.reveal('.card1');
+		sr.reveal('.part1');
+		sr.reveal('.part2');
+		sr.reveal('.part3');
+		sr.reveal('.part4');
+		sr.reveal('.part5');
+		sr.reveal('.part6');
+		var scrollTop = '';
+		var newHeight = '100';
+
+		$(window).bind('scroll', function() {
+			scrollTop = $(window).scrollTop();
+			newHeight = scrollTop + 100;
+		});
 	</script>
+	<script>
+  $(function(){
+    $('a').each(function() {
+      if ($(this).prop('href') == window.location.href) {
+        $(this).addClass('current');
+      }
+    });
+  });
+  </script>
 </body>
 
 </html>
