@@ -1,22 +1,25 @@
 /**** DOC STYLE ****/
-html,
-body {
-  background-color: #fafafa;
+
+html, body {
+  background-color: #fbfbfb;
   color: #454545;
 }
-img {
+
+.img-tag {
   width: 75%;
-  text-align: right;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 /************************************/
 
 /**** TYPOGRAPHY ****/
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Playfair+Display:400,600,900');
-
 h1, h2, h3 {
   font-family: 'Playfair Display', serif;
-  font-weight: 600;
+  font-weight: 900;
 }
 
 h1 {
@@ -28,17 +31,26 @@ h2 {
   color: #3C7072;
 }
 
-p,body {
+h4 {
+  font-size: 100%;
+}
+
+p, body {
+  line-height: 24px;
   color: #454545;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
 }
 
+.navbar-dark {
+  background-color: grey;
+}
 
 .text-link {
   text-decoration: underline;
   color: #DBA367;
 }
+
 .text-link:hover {
   text-decoration: underline;
   color: #EDBF8E;
@@ -47,17 +59,33 @@ p,body {
 .btn-outline-info:hover {
   background-color: #69B2B5;
 }
+
+
 /************************************/
 
 /**** HEADER + FOOTER ****/
 
+header {}
+
 header, footer {
+  font-weight: 300;
   padding-left: 2%;
   padding-right: 2%;
 }
 
 footer {
-  margin-top: 3%;
+  font-size: 13px;
+  margin-top: 0%;
+  margin-bottom: 3%;
+}
+
+.li-foot {
+  padding-right: 5px;
+  color: #2E2E2E;
+}
+
+.li-foot:hover {
+  color: #7C7C7C;
 }
 
 .nav-link {
@@ -76,51 +104,63 @@ nav a.current {
 /************************************/
 
 /**** JUMBOTRON ****/
+
 .intro-bg {
   height: 32vh;
-  background-color: #B9DEE0;
+  background-color: #ADD1D3;
+  border-bottom: 4px solid #99BABC;
 }
 
 .intro-div {
-  padding: 2% 0% 0% 2%;
-  margin: 4%;
-  background-color: #69B2B5;
+  padding: 2%;
+  margin: 4% 0 0% 2%;
 }
+
 /************************************/
 
 /**** CONTENT CARDS ****/
+
 .content-body {
   height: 100%;
   padding: 3% 6% 7% 6%;
 }
 
 .content-divs {
-
+  padding: 2%;
   margin: 8% 2% 6% 2%;
+  background-color: #fff;
+  border-radius: 1%;
+  border:
 }
 
 /**** ABOUT ME CARD ****/
+
 .content-body {
   height: 100%;
   padding: 3% 6% 7% 6%;
 }
+
 /************************************/
 
 /****VISUALS + PROTOTYPE CARDS ****/
+
 .other1, .other {
   margin-bottom: 4%;
   height: 32vh;
   padding: 7%;
-  text-align: center;
 }
-.other1 {
-  background-color: #C86F85;
-}
-.other {
-  background-color: #5045B1;
 
+.card {
+  text-align: center;
+  margin: 0 4% 8% 4%;
 }
-.other1:hover, .other:hover {
-  background-color:rgba(192,192,192,0.3);
+
+.card-img {
+  opacity: .3;
 }
+
+.card-title {
+  padding: 2% 0% 0% 0%;
+}
+
 /************************************/
