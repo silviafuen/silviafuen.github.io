@@ -60,12 +60,9 @@ p, body {
   background-color: #69B2B5;
 }
 
-
 /************************************/
 
 /**** HEADER + FOOTER ****/
-
-header {}
 
 header, footer {
   font-weight: 300;
@@ -108,7 +105,7 @@ nav a.current {
 .intro-bg {
   height: 32vh;
   background-color: #ADD1D3;
-  border-bottom: 4px solid #99BABC;
+  border-bottom: 4px solid #69B2B5;
 }
 
 .intro-div {
@@ -127,17 +124,12 @@ nav a.current {
 
 .content-divs {
   padding: 2%;
-  margin: 8% 2% 6% 2%;
+  margin: 6% 2% 4% 4%;
   background-color: #fff;
   border-radius: 1%;
-  border:
 }
-
-/**** ABOUT ME CARD ****/
-
-.content-body {
-  height: 100%;
-  padding: 3% 6% 7% 6%;
+.card-section {
+  padding: 0% 2% 2% 4%;
 }
 
 /************************************/
@@ -150,10 +142,16 @@ nav a.current {
   padding: 7%;
 }
 
-.card {
-  text-align: center;
-  margin: 0 4% 8% 4%;
+.border-teal {
+  border-color: #69B2B5;
 }
+
+.card {
+  width: 100%;
+  text-align: center;
+}
+
+
 
 .card-img {
   opacity: .3;
