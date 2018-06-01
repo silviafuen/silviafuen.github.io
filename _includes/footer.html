@@ -1,19 +1,34 @@
-<footer class="row footer-links">
-  <div class="col-md-4">
+<footer class="row">
+  <div class="col-md-6 col-sm-12 nav">
+    {% if site.twitter_username %}
+    <li class="col-1">
+      <a class="li-foot" href="https://twitter.com/{{ site.twitter_username }}">
+    <i class="fab fa-twitter fa-lg"></i>
+    </a>
+    </li>
+    {% endif %}
+    {% if site.github_username %}
+    <li class="col-1" >
+    <a class="li-foot " href="https://github.com/{{ site.github_username }}">
+    <i class="fab fa-github fa-lg"></i>
+    </a>
+    </li>
+    {% endif %}
+    {% if site.linkedin_username %}
+    <li class="col-1">
+    <a class="li-foot" href="https://www.linkedin.com/in/{{ site.linkedin_username }}">
+    <i class="fab fa-linkedin-in fa-lg"></i>
+    </a>
+    </li>
+    {% endif %}
+
+    <li class="col-1">
+    <a class="li-foot" href="https://www.behance.net/silviafuen">
+    <i class="fab fa-behance fa-lg"></i>
+    </a>
+    </li>
   </div>
-  <div class="col-6 col-sm-1">
-    <a href="https://angel.co/silviafuen"><img class="icon-link" src="assets/icons/AngelList-White-Victory-Hand.png" alt="Behance portfolio"></a>
-  </div>
-  <div class="col-6 col-sm-1">
-    <a href="https://www.behance.net/user/?username=silviafuen"><img class="icon-link" src="assets/icons/behance-logo.png" alt="Behance portfolio"></a>
-  </div>
-  <div class="col-6 col-sm-1">
-    <a href="https://github.com/silviafuen"><img class="icon-link" src="assets/icons/Octocat.png" alt="github page"></a>
-  </div>
-  <div class="col-6 col-sm-1">
-    <a href="https://www.linkedin.com/in/silviafuen/"><img class="icon-link" src="assets/icons/In-White-128px-TM.png" alt="Linkedin Profile"></a>
-  </div>
-  <div class="col-12">
-    <p>designed & developed by <a class="text-link" href="https://github.com/silviafuen/silviafuen.github.io">silviafuen</a>. &#xA9; 2018</p>
-  </div>
+    <div class="col-md-6 col-sm-12 nav justify-content-end">
+      <caption>designed & developed by me © 2018</caption>
+    </div>
 </footer>

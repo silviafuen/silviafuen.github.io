@@ -9,62 +9,14 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
 	<link rel="shortcut icon" href="assets/icons/favi.ico" type="image/x-icon" />
 	<!--[INDEX ONLY - STYLING]-->
 	<style>
-		body {
-			background-color: #B9DEE0;
-		}
-		header {
-			background-color: rgba(0,0,0,0.001);
-		}
-
-		h1 {
-			color: #fff;
-		}
-
-		.content-title {
-			height: 50vh;
-			background-color: rgba(0,0,0,0.001);
-		}
-
-		.title-content {
-			padding: 7% 0% 0% 8%;
-		}
-
-		.green-light {
-			background-color: #69B2B5;
-			padding: 2% 5% 2% 4%;
-		}
-
-		.content-projects {
-			background-color: #fff;
-			height: 100%;
-		}
-
-		.projects-content {
-			padding: 4% 8% 1% 8%;
-		}
-
-		.projects-link {
-			padding-left: 4%;
-		}
-
-		.content-div {
-			padding-bottom: 3%;
-		}
-
-		.content-bio {
-			background-color: #E4F0F0;
-			padding: 4% 8% 4% 8%;
-			height: 100%;
-		}
-
-		.frame-bio {
-			background-color: #F5DABD;
-			opacity: .8;
-			padding: 1% 5% 1% 5%;
-		}
+	header {
+		background-color: #ADD1D3;
+	}
 	</style>
 	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 	{% include analytics.html %}
@@ -88,7 +40,7 @@
 
 <body class="container-fluid">
 	<!--[HEADER - navigation]-->
-	{% include index-header.html %}
+	{% include header.html %}
 
 	<!--[BODY - content]-->
 
@@ -106,6 +58,16 @@
 	<script>
 		sr.reveal('.card0');
 		sr.reveal('.card1');
+		sr.reveal('.card3');
+	</script>
+	<script>
+	$(function(){
+		$('a').each(function() {
+			if ($(this).prop('href') == window.location.href) {
+				$(this).addClass('current');
+			}
+		});
+	});
 	</script>
 </body>
 
