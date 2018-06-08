@@ -1,78 +1,17 @@
 ---
 layout: default
 title: Projects
-permalink: /test/blog
+permalink: /archive
 ---
+<section class="row">
+	<div class="col-md-6 col-sm-12">
+	<h3>{{ page.title }}</h3>
+		<p> A few of the projects that I've enjoyed working on and the procress that was taken with each.</p>
+		<ul class="posts">
 
-	<h2>{{ page.title }}</h12
-	<p> A few of the projects that I've enjoyed working on and the procress that was taken with each.</p>
-	<ul class="posts">
-
-	  {% for post in site.posts %}
-	    <li><span>{{ post.date | date_to_string }}</span> » <a class="list-link" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-	  {% endfor %}
-	</ul>
-
-<section class="row content-body flex part-container">
-  <div class="col-md-12">
-    <h2 class="content-title">{{ page.title }}</h2>
-    <!--[PROJECT 1]-->
-    <div class="row part1">
-      <div class="col-md-7 content-div">
-        <img class="frame" src="http://via.placeholder.com/450x300" style="width:100%">
-      </div>
-      <div class="col-md-5 content-div">
-        <h3>Title of Project 1</h3>
-        <p>
-          Computers have become ubiquitous in almost every facet of our lives. At work, desk jockeys spend hours in front of their desktops, while delivery people scan bar codes with handhelds and workers in the field stay in touch with the central office via their
-          notebooks.
-        </p>
-        <p> At home, we rely on our desktops and notebooks to do our shopping, to entertain us, and to keep us abreast of world events. We may not see our email servers, but we count on them to deliver our email whenever and wherever we want</p>
-      </div>
-    </div>
-
-    <!--[PROJECT 2]-->
-    <div class="row part2">
-      <div class="col-md-7 content-div">
-        <img class="frame" src="http://via.placeholder.com/450x300" style="width:100%">
-      </div>
-      <div class="col-md-5 content-div">
-        <h3>Title of Project 2</h3>
-        <p>
-          Computers have become ubiquitous in almost every facet of our lives. At work, desk jockeys spend hours in front of their desktops, while delivery people scan bar codes with handhelds and workers in the field stay in touch with the central office via their
-          notebooks.
-        </p>
-        <p> At home, we rely on our desktops and notebooks to do our shopping, to entertain us, and to keep us abreast of world events. We may not see our email servers, but we count on them to deliver our email whenever and wherever we want</p>
-      </div>
-    </div>
-
-    <!--[PROJECT 3]-->
-    <div class="row part3">
-      <div class="col-md-7 content-div">
-        <img class="frame" src="http://via.placeholder.com/450x300" >
-      </div>
-      <div class="col-md-5 content-div">
-        <h3>Title of Project 3</h3>
-        <p>
-          Computers have become ubiquitous in almost every facet of our lives. At work, desk jockeys spend hours in front of their desktops, while delivery people scan bar codes with handhelds and workers in the field stay in touch with the central office via their
-          notebooks.
-        </p>
-        <p> At home, we rely on our desktops and notebooks to do our shopping, to entertain us, and to keep us abreast of world events. We may not see our email servers, but we count on them to deliver our email whenever and wherever we want</p>
-      </div>
-    </div>
-    <!--[PROJECT 4]-->
-    <div class="row part4">
-      <div class="col-md-7 content-div">
-        <img class="frame" src="http://via.placeholder.com/450x300" style="width:100%">
-      </div>
-      <div class="col-md-5 content-div">
-        <h3>Title of Project 4</h3>
-        <p>
-          Computers have become ubiquitous in almost every facet of our lives. At work, desk jockeys spend hours in front of their desktops, while delivery people scan bar codes with handhelds and workers in the field stay in touch with the central office via their
-          notebooks.
-        </p>
-        <p> At home, we rely on our desktops and notebooks to do our shopping, to entertain us, and to keep us abreast of world events. We may not see our email servers, but we count on them to deliver our email whenever and wherever we want</p>
-      </div>
-    </div>
-  </div>
+		  {% for post in site.posts %}
+		    <li><span>{{ post.date | date_to_string }}</span> » <a class="list-link" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+		  {% endfor %}
+		</ul>
+	</div>
 </section>
