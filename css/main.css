@@ -1,90 +1,55 @@
-/**** DOC STYLE ****/
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+- Header/Footer
+- Index elements
+*/
 
-html, body {
-  background-color: #fbfbfb;
-  color: #454545;
-}
+/*
+{% include header.html %}
+<!-- Primary Page Layout
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+{{ content }}
+
+<!-- Header
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+{% include footer.html %}
+ HEADER/FOOTER  –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 img {
-  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 64%;
+  max-width: 90%;
 }
-
-.img-tag {
-  padding: 2%;
-}
-
-/************************************/
-
-/**** TYPOGRAPHY ****/
-
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Playfair+Display:900');
-h1, h2, h3 {
-  font-family: 'Playfair Display', serif;
-  font-weight: 900;
-}
-
-h1 {
-  font-size: 275%;
-  color: #fff;
-}
-
-h2 {
-  color: #3C7072;
-}
-
-h4 {
-  line-height: 28px;
-  font-weight: bold;
-  font-size: 110%;
-}
-
-p, body {
-  font-size: 15px;
-  line-height: 24px;
-  color: #454545;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-}
-em {
-line-height: 32px;
-color: #7E7E7E;
-
-}
-
-.navbar-dark {
-  background-color: grey;
-}
-
-.text-link {
+header a.current {
   text-decoration: underline;
-  color: #DBA367;
+  color:#44498B;
+}
+header,footer {
+  overflow: hidden;
+  padding: 1% 6% 1% 6%;
 }
 
-.text-link:hover {
-  text-decoration: underline;
-  color: #EDBF8E;
+header a, footer a {
+  float: right;
+  color: #333;
+  text-align: center;
+  padding: 6px;
+  text-decoration: none;
+  border-radius: 4px;
 }
-
-.btn-outline-info:hover {
-  background-color: #69B2B5;
+footer a {
+  color: #333;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  border-radius: 4px;
 }
-
-/************************************/
-
-/**** HEADER + FOOTER ****/
-
-header, footer {
-  font-weight: 300;
-  padding-left: 2%;
-  padding-right: 2%;
+.foot-left {
+  float: left;
 }
-
-footer {
-  font-size: 13px;
-  margin-top: 0%;
-  margin-bottom: 3%;
-}
-
 .li-foot {
   padding-right: 5px;
   color: #2E2E2E;
@@ -94,107 +59,56 @@ footer {
   color: #7C7C7C;
 }
 
-.nav-link {
-  text-decoration: none;
-  color: #2E2E2E;
+/* Color Palette on Style Guide –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.dark-grey {
+  height: 50px;
+  width: 80px;
+  background-color: #333333;
+}
+.white {
+  border: 1px solid #333;
+  height: 50px;
+  width: 80px;
+  background-color: #FDFDFD;
+}
+.light {
+  height: 50px;
+  width: 80px;
+  background-color: #DCDFFF;
+}
+.bright {
+  height: 50px;
+  width: 80px;
+  background-color: #5D64C1;
+}
+.medium {
+  height: 50px;
+  width: 80px;
+  background-color: #44498B;
+}
+.dark {
+  height: 50px;
+  width: 80px;
+  background-color: #323667;
+}
+.grey {
+  height: 50px;
+  width: 80px;
+  background-color: #696B7C;
 }
 
-.nav-link:hover {
-  color: #7C7C7C;
+/* Index Elements  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.intro {
+  margin-top: 5%;
+  padding: 10% 5% 4% 0%;
 }
-
-nav a.current {
-  text-decoration: underline;
+.border-line {
+  padding-top: 2em;
+  border-bottom: 4px solid #44498B;
 }
-
-/************************************/
-
-/**** JUMBOTRON ****/
-
-.intro-bg {
-  height: 32vh;
-  background-color: #ADD1D3;
-  border-bottom: 4px solid #69B2B5;
+.project {
+margin: 12% 0% 12% 0%;
 }
-
-.intro-div {
-  padding: 2%;
-  margin: 4% 0% 0% 8%;
-}
-
-/************************************/
-
-/**** CONTENT CARDS ****/
-
-.content-body {
-  margin: auto;
-  width: 100%;
-  padding: 3% 10% 4% 8%;
-}
-
-.content-divs {
-  padding: 2%;
-  margin: 6% 2% 4% 4%;
-  background-color: #fff;
-  border-radius: 1%;
-}
-
-.card-section {
-  padding: 0% 2% 2% 4%;
-}
-
-/************************************/
-
-/****VISUALS + PROTOTYPE CARDS ****/
-
-.case-study {
-  margin: auto;
-  width: 100%;
-  padding: 1% 1% 3% 1%;
-}
-
-.other1, .other {
-  margin-bottom: 4%;
-  height: 32vh;
-  padding: 7%;
-}
-
-.border-teal {
-  border-color: #69B2B5;
-}
-
-.card {
-  text-align: center;
-  margin-bottom: 2%;
-}
-
-.content-border-top {
-  margin: 4% 8% 2% 8%;
-}
-
-.content-border {
-  margin: 2% 8% 2% 8%;
-}
-
-.boxy {
-  position: relative;
-}
-
-.boxy:hover .boxy-overlay {
-  opacity: .85;
-}
-
-.boxy-overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #4A4A4A;
-}
-
-/************************************/
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– */

@@ -1,57 +1,49 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-	<title>{{page.title}}</title>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-	<link rel="shortcut icon" href="assets/favi.ico" type="image/x-icon" />
-	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-	<script>
-		window.sr = ScrollReveal();
-	</script>
-	{% include analytics.html %}
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>{{ page.title }}</title>
+  <meta name="description" content="I'm Silvia,I have a background in development with a focus interaction & exerpience">
+  <meta name="author" content="Silvia Fuentes">
+  <meta property="og:title" content="Interdisplinary product designer">
+  <meta property="og:description" content="I'm Silvia, background in development with a focus interaction & exerpience">
+  <meta property="og:image" content="assets/meta-preview.png">
+  <meta property="og:url" content="http://silviafuen.github.io">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700|Roboto:300,400" rel="stylesheet">
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="assets/favi.ico">
+
 </head>
-<!--[ ]-->
 
-<body class="container-fluid">
-	<!--[HEADER - navigation]-->
-	{% include header.html %}
+<body>
+{% include header.html %}
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+{{ content }}
 
-	<!--[BODY - content]-->
-
-	{{ content }}
-
-	<!--[FOOTER - external links]-->
-	{% include footer.html %}
-
-	<!-- jQuery, Popper.js,Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-	<script src="script/pop-up.js"></script>
-	<script>
-		sr.reveal('.part1');
-		sr.reveal('.part2');
-		sr.reveal('.part3');
-		sr.reveal('.part4');
-		sr.reveal('.part5');
-		sr.reveal('.part6');
-		var scrollTop = '';
-		var newHeight = '100';
-
-		$(window).bind('scroll', function() {
-			scrollTop = $(window).scrollTop();
-			newHeight = scrollTop + 100;
-		});
-	</script>
-	<script>
+{% include footer.html %}
+  <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+  <script>
   $(function(){
     $('a').each(function() {
       if ($(this).prop('href') == window.location.href) {
