@@ -1,31 +1,39 @@
-<footer class="row">
-  <div class="col-md-6 col-sm-12 nav">
-    <li {% if site.twitter_username %} <li class="col-1">
+<!-- Footer Layout
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<footer class="">
+  <div class="foot-left">
+    {% if site.twitter_username %}
+    <span class="">
       <a class="li-foot" href="https://twitter.com/{{ site.twitter_username }}">
-    <i class="fab fa-twitter fa-lg"></i>
-    </a>
-    </li>
-    {% endif %} {% if site.github_username %}
-    <li class="col-1">
-      <a class="li-foot " href="https://github.com/{{ site.github_username }}">
-    <i class="fab fa-github fa-lg"></i>
-    </a>
-    </li>
-    {% endif %} {% if site.linkedin_username %}
-    <li class="col-1">
-      <a class="li-foot" href="https://www.linkedin.com/in/{{ site.linkedin_username }}">
-    <i class="fab fa-linkedin-in fa-lg"></i>
-    </a>
-    </li>
+        <i class="fab fa-twitter fa-lg"></i>
+      </a>
+    </span>
     {% endif %}
 
-    <li class="col-1">
+    {% if site.github_username %}
+    <span class="">
+      <a class="li-foot " href="https://github.com/{{ site.github_username }}">
+        <i class="fab fa-github fa-lg"></i>
+      </a>
+    </span>
+    {% endif %}
+
+    {% if site.linkedin_username %}
+    <span class="">
+      <a class="li-foot" href="https://www.linkedin.com/in/{{ site.linkedin_username }}">
+        <i class="fab fa-linkedin-in fa-lg"></i>
+      </a>
+    </span>
+    {% endif %}
+
+    <span class="">
       <a class="li-foot" href="https://www.behance.net/silviafuen">
-    <i class="fab fa-behance fa-lg"></i>
-    </a>
-    </li>
+        <i class="fab fa-behance fa-lg"></i>
+      </a>
+    </span>
   </div>
-  <div class="col-md-6 col-sm-12 nav justify-content-end">
-    <p>designed & developed by me © 2018</p>
+
+  <div class="">
+    <a class="" href="https://github.com/silviafuen/silviafuen.github.io">designed & developed by silviafuen © 2018</a>
   </div>
 </footer>
