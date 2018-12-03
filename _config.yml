@@ -1,4 +1,4 @@
-name: Silvia Fuentes, Visual Designer
+name: Silvia Fuentes, Product Designer
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title.html
 plugins_dir:
@@ -8,4 +8,10 @@ gems:
 twitter_username:     silviafuen
 github_username:      silviafuen
 linkedin_username:    silviafuen
-behance_username:     silviafuen
+dribbble_username:    silviafuen
+
+
+# Dribbble Client Access Token
+dribbble:
+  username: silviafuen
+  token: 1d37e6b232fdfc472d0638cf5db5c274024ccc62fbe478aa0e78e4c89baae90a
