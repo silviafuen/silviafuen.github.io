@@ -6,7 +6,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>{{ page.title 1}}</title>
+  <title>{{ page.title 2}}</title>
   <meta name="description" content="I'm Silvia, I work on interaction & experience design">
   <meta name="author" content="Silvia Fuentes">
   <meta property="og:title" content="Interdisplinary product designer">
@@ -36,7 +36,6 @@
   <link rel="icon" type="image/png" href="assets/favi.ico">
 
 </head>
-<script src="script/jribbble.min.js"></script>
 
 <body>
   <div class="section">
@@ -127,16 +126,13 @@
   </div>
 
   <div class="section">
-
-    <!--/********* Additional Projects *********   <div class="container">
-    <div class="row">
-      <div class="five columns">
-        <h3>Additional works</h3>
-
-
-      </div>
-    </div>
-  </div>-->
+    <script src="script/jribbble.min.js"></script>
+    <script>
+      jribbble.shots({token: "4fe0821578b787d5ca2db0365aa86833fe5fa4cb7fc6da83709cf11e0b852176"}, function(shotsArray) {
+        console.log(shotsArray); // The JSON from the API Request.
+      });
+    </script>
+  <
   </div>
   <script>
   $(function() {
