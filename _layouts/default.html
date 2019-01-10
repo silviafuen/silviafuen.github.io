@@ -34,8 +34,11 @@
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="assets/favi.ico">
+<script src="script/jribbble.min.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
 
 </head>
+
 
 <body>
 {% include header.html %}
@@ -46,6 +49,15 @@
 {% include footer.html %}
   <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script>
+    jribbble.shots({
+      token: "4fe0821578b787d5ca2db0365aa86833fe5fa4cb7fc6da83709cf11e0b852176"
+    }, function(shots) {
+      document.querySelector(".dribbble-shots-list").innerHTML = shots.reduce(function(html, shot) {
+        return html + '<li><a href="' + shot.html_url + '" target="_blank"><img src="' + shot.images.normal + '"></a></li>';
+      }, "");
+    });
+  </script>
   <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
   <script>
   $(function(){
@@ -55,6 +67,9 @@
       }
     });
   });
+  </script>
+  <script>
+    ScrollReveal().reveal('.dribbble-shots-list', { delay: 500 });
   </script>
 </body>
 

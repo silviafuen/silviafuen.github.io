@@ -112,8 +112,25 @@ footer a {
 margin: 12% 0% 12% 0%;
 }
 
-
-
 /* –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-/* Interactive Prototype Elements  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Jribbble shots  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.dribbble-shots-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.dribbble-shots-list li {
+  margin: 5px;
+  /*box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+  border: 1px solid #dfdfdf;*/
+}
+.dribbble-shots-list img {
+  width: 300px;
+  padding: 5px;
+  display: block;
+  margin: 0;
+}
