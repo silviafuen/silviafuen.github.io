@@ -47,6 +47,10 @@ footer a {
   text-decoration: none;
   border-radius: 4px;
 }
+.caption {
+    color: #696B7C;
+    font-weight: 400;
+}
 .foot-left {
   float: left;
 }
