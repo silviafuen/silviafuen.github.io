@@ -15,7 +15,18 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 {% include footer.html %}
  HEADER/FOOTER  –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
+ strong {
+   font-size: 1.6rem;
+   color: #323667;
+ }
+ blockquote {
+   font-size: 1.8rem;
+   background: #f9f9f9;
+   border-left: 10px solid #ccc;
+   margin: 1.5em 10px;
+   padding: 0.5em 10px;
+   quotes: "\201C""\201D""\2018""\2019";
+ }
 img {
   display: block;
   margin-left: auto;
@@ -48,6 +59,7 @@ footer a {
   border-radius: 4px;
 }
 .caption {
+    text-align: center;
     color: #696B7C;
     font-weight: 400;
 }
@@ -79,12 +91,12 @@ footer a {
 .light {
   height: 50px;
   width: 80px;
-  background-color: #DCDFFF;
+  background-color: #6E718C;
 }
 .bright {
   height: 50px;
   width: 80px;
-  background-color: #5D64C1;
+  background-color: #60648C;
 }
 .medium {
   height: 50px;
