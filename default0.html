@@ -1,68 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: default
+title: On/Off Switch UI - SF Portfolio
+permalink: quince
+---
+<div class="section">
+  <div class="container">
 
-<head>
-
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>{{ page.title }}</title>
-  <meta name="description" content="I'm Silvia, I work on interaction & experience design">
-  <meta name="author" content="Silvia Fuentes">
-  <meta property="og:title" content="Interdisplinary product designer">
-  <meta property="og:image" content="assets/meta-preview.png">
-  <meta property="og:url" content="http://silviafuen.github.io">
-
-  <meta name="twitter:card" content="summary" />
- <meta name="twitter:site" content="@silviafuen" />
- <meta name="twitter:title" content="Interdisplinary product designer" />
- <meta name="twitter:description" content="I'm Silvia,I have a background in development with a focus interaction & experience" />
- <meta name="twitter:image" content="http://silviafuen.github.io/assets/meta-preview.png" />
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700|Roboto:300,400" rel="stylesheet">
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="assets/favi.ico">
-
-</head>
-
-<body>
-{% include header.html %}
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-{{ content }}
-
-{% include footer.html %}
-  <!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
-  <script>
-  $(function(){
-    $('a').each(function() {
-      if ($(this).prop('href') == window.location.href) {
-        $(this).addClass('current');
-      }
-    });
-  });
-  </script>
-  <script src="/path/to/jribbble.min.js">
-  jribbble.shots({token: "1d37e6b232fdfc472d0638cf5db5c274024ccc62fbe478aa0e78e4c89baae90a"}, function(shots) {
-  document.querySelector(".dribbble-shots-list").innerHTML = shots.reduce(function(html, shot) {
-    return html + '<li><a href="'+  shot.html_url + '" target="_blank"><img src="' + shot.images.normal + '"></a></li>';
-  }, "");
-});
-</script>
-</body>
-
-</html>
+    <!--- INTRODUCTION ------------------------------------------------------>
+    <div class="row">
+      <div class="twelve columns">
+        <h1>On/Off Switch</h1>
+        <p>
+          <span>Daily UI - #015</span><br>
+          <span class="caption">Product Design, Visual Design, Prototyping</span>
+        </p>
+      </div>
+    </div>
+    <!---CONTENT ------------------------------------------------------>
+    <div class="row" id="wrapper">
+      <div class="seven columns">
+        <p>
+          I landed on this idea by thinking about where I used switches IRL. Lighting came to mind, I designed a UI that in a single interface allowed you to turn the lights on and off in the place. Here's some of the rationale behind my design choices.
+        </p>
+        <p>
+          <b>Main Switch:</b> 'All lights' gives you the option to turn them all on or off. This feature was the most complicated to design, as I had to design a state in which <u>some</u> of the lights where on, making the statement false. While also giving users the visual cue that they can still select the option. The element you see now is the 2nd version of it, after exploring sliders/switch states, I was inspired by a preview of one and modeled it similarly. (apologies for losing the inspiration link)
+        </p>
+        <p>
+          <b>Cards:</b> A few small things I added to make the turning on/off of the lights in a room more apparent to users was to use a shadow effect and having the photo become full color. I added the yellow color for the Switch, as I associated it with lighting.
+        </p>
+        <p>
+          At times I find, Daily UI prompts to be so wide open they leave me paralyzed to even begin, this wasn't the case once I formulated the idea and simple constraints. When I know more about watch UI, I hope to come back and play with a watch interface considering many people take a lap around their apartments/homes before leaving to turn off all the lights.
+          </p>
+          <br>
+        <a class="button" href="/dailyui">View more Daily UI Notes</a>
+      </div>
+      <div class="five columns">
+        <iframe style="border: none;" style="padding:1%;" width="100%" height="800" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fa2ZAhNWMZ2bPmP4ECLQcN3LG%2FOn-Off-Switch-Daily-UI-015%3Fnode-id%3D9%253A84%26viewport%3D-4741%252C172%252C0.8549212217330933%26scaling%3Dscale-down" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</div>
