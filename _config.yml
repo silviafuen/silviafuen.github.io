@@ -3,7 +3,7 @@ markdown: kramdown
 permalink: /blog/:year/:month/:day/:title.html
 plugins_dir:
   - jekyll-sitemap
-gems:
+plugins:
   - jekyll-sitemap
 twitter_username:     silviafuen
 github_username:      silviafuen
