@@ -7,50 +7,60 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <title>{{ page.title }}</title>
-  <meta name="description" content="I'm Silvia, I work on product & UX design">
-  <meta name="author" content="Silvia Fuentes">
-  <meta property="og:title" content="Product & UX designer">
-  <meta property="og:image" content="assets/meta-preview.png">
-  <meta property="og:url" content="http://silviafuen.github.io">
+  <!-- Primary Meta Tags -->
+  <title>Silvia Fuentes, Product & Experience Designer</title>
+  <meta name="title" content="Silvia Fuentes, Product & Experience Designer">
+  <meta name="description" content="I create products and experiences that serve marginalized peoples and move us toward a more inclusive future with intentional design.">
 
-  <meta name="twitter:card" content="summary" />
- <meta name="twitter:site" content="@silviafuen" />
- <meta name="twitter:title" content="Product & Experience designer" />
- <meta name="twitter:description" content="Hi! I focus on Product & UX + do some dev stuff" />
- <meta name="twitter:image" content="http://silviafuen.github.io/assets/meta-preview.png" />
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://silviafuen.github.io/">
+  <meta property="og:title" content="Silvia Fuentes, Product & Experience Designer">
+  <meta property="og:description" content="I create products and experiences that serve marginalized peoples and move us toward a more inclusive future with intentional design.">
+  <meta property="og:image" content="assets/meta.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://silviafuen.github.io/">
+  <meta property="twitter:title" content="Silvia Fuentes, Product & Experience Designer">
+  <meta property="twitter:description" content="I create products and experiences that serve marginalized peoples and move us toward a more inclusive future with intentional design.">
+  <meta property="twitter:image" content="assets/meta.png">
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700|Roboto:300,400" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=DM+Serif+Display:400,400i|Lato:400,400i,700&display=swap');
+  </style>
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="assets/favi.ico">
-<script src="script/jribbble.min.js"></script>
-<script src="https://unpkg.com/scrollreveal"></script>
-<!-- fancybox files -->
-<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
-<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+  <script src="script/jribbble.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <!-- fancybox files -->
+  <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
 
 </head>
 
 
 <body>
-{% include header.html %}
+  {% include header.html %}
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-{{ content }}
+  {{ content }}
 
-{% include footer.html %}
+  {% include footer.html %}
   <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script>
@@ -64,16 +74,34 @@
   </script>
   <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
   <script>
-  $(function(){
-    $('a').each(function() {
-      if ($(this).prop('href') == window.location.href) {
-        $(this).addClass('current');
-      }
+    $(function() {
+      $('a').each(function() {
+        if ($(this).prop('href') == window.location.href) {
+          $(this).addClass('current');
+        }
+      });
     });
-  });
   </script>
   <script>
-    ScrollReveal().reveal('.dribbble-shots-list', { delay: 500 });
+    $(document).ready(function() {
+      $(".down").click(function() {
+        $('html, body').animate({
+          scrollTop: $(".project").offset().top
+        }, 1500);
+      });
+    });
+
+    $(document).ready(function() {
+      $(".up").click(function() {
+        $('html, body').animate({
+          scrollTop: $("header").offset().top
+        }, 1000);
+      });
+    });
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
   </script>
 </body>
 

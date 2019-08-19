@@ -15,14 +15,37 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 {% include footer.html %}
  HEADER/FOOTER  –––––––––––––––––––––––––––––––––––––––––––––––––– */
- strong {
-   font-size: 1.6rem;
-   color: #323667;
+ .subtitle {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  /* or 125% */
+  display: flex;
+  letter-spacing: 0.04em;
+
+  color: #70728F;
+ }
+ strong{
+   font-weight:bold;
+   font-size: 17px;
+   line-height: 125%;
+   letter-spacing: 0.04em;
+   color: #333547;
+ }
+ .secondary{
+   font-family: Lato;
+   font-size: 18px;
+   line-height: 140%;
+   letter-spacing: 0.04em;
+
+   color: #2F2F37;
  }
  blockquote {
    font-size: 1.8rem;
-   background: #f9f9f9;
-   border-left: 10px solid #ccc;
+   background: #F4F4F6;
+   border-left: 10px solid #E2E3E9;
    margin: 1.5em 10px;
    padding: 0.5em 10px;
    quotes: "\201C""\201D""\2018""\2019";
@@ -77,41 +100,49 @@ footer a {
 
 /* Color Palette on Style Guide –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.dark-grey {
-  height: 50px;
-  width: 80px;
-  background-color: #333333;
+.color400 {
+  width: 100%;
+  height: 64px;
+  background: #323667;
 }
-.white {
-  border: 1px solid #333;
-  height: 50px;
-  width: 80px;
-  background-color: #FDFDFD;
+
+.color300 {
+  width: 100%;
+  height: 64px;
+  background: #404585;
 }
-.light {
-  height: 50px;
-  width: 80px;
-  background-color: #6E718C;
+.color200{
+  width: 100%;
+  height: 64px;
+  background: #4F55A3;
 }
-.bright {
-  height: 50px;
-  width: 80px;
-  background-color: #60648C;
+
+.color100{
+  width: 100%;
+  height: 64px;
+  background: #5D64C1;
 }
-.medium {
-  height: 50px;
-  width: 80px;
-  background-color: #44498B;
+.grey300 {
+  width: 100%;
+  height: 64px;
+  background: #333547;
 }
-.dark {
-  height: 50px;
-  width: 80px;
-  background-color: #323667;
+.grey200 {
+  width: 100%;
+  height: 64px;
+  background: #81839C;
 }
-.grey {
-  height: 50px;
-  width: 80px;
-  background-color: #696B7C;
+.grey100{
+  width: 100%;
+  height: 64px;
+  background: #E2E3E9;
+}
+.white100 {
+  width: 100%;
+  height: 64px;
+  background: #F4F4F5;
+  border: 0.8px solid #333547;
+  /*box-sizing: border-box;*/
 }
 
 /* Index Elements  –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -119,17 +150,25 @@ footer a {
 .intro {
   margin-top: 5%;
   padding: 10% 5% 4% 0%;
+  height:80vh;
 }
 .border-line {
   padding-top: 2em;
-  border-bottom: 1px solid #696B7C;
+  border-bottom: 1px solid #81839C;
 }
 .project {
 margin: 12% 0% 12% 0%;
 }
 
 /* –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.previous {
+  text-align: left;
 
+}
+.next{
+  text-align: right;
+
+}
 /* Jribbble shots  –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .dribbble-shots-list {
   list-style: none;
