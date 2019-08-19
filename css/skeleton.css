@@ -123,10 +123,10 @@ html {
   background-color: #FCFCFC;
   font-size: 62.5%; }
 body {
-  font-size: 1.5em; /* 16px ?? currently ems cause chrome bug misinterpreting rems on body element */
-  line-height: 1.6; /*24px*/
+  font-size: 1.6em; /* 16px ?? currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.8em; /*24px*/
   font-weight: 400;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.03em;
   font-family: 'Lato', sans-serif;
   color: #2F2F37;
 }
