@@ -97,6 +97,15 @@ footer a {
 .li-foot:hover {
   color: #7C7C7C;
 }
+.nobull {
+  list-style-type: none;
+}
+.up {
+  float: left;
+  margin:0;
+  padding-top: 1em;
+  border: 0;
+}
 
 /* Color Palette on Style Guide –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -156,6 +165,23 @@ footer a {
   padding-top: 2em;
   border-bottom: 1px solid #81839C;
 }
+
+.resume-border-line {
+  padding-top: 2em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #81839C;
+}
+
+.vertical-border-line {
+  border-right: 1px solid #81839C;
+  height: 14em;
+}
+
+.vl {
+  border-right: 1px solid #81839C;
+  height: 8em;
+}
+
 .project {
 margin: 12% 0% 12% 0%;
 }
