@@ -1,41 +1,43 @@
 <!-- Footer Layout
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<footer class="">
-  <div class="foot-left">
-    {% if site.twitter_username %}
-    <span class="">
-      <a class="icon" href="https://twitter.com/{{ site.twitter_username }}">
-        <i class="fab fa-twitter fa-lg" title="Twitter"></i>
-      </a>
-    </span>
-    {% endif %}
-
-    {% if site.linkedin_username %}
-    <span class="">
-      <a class="icon" href="https://www.linkedin.com/in/{{ site.linkedin_username }}">
-        <i class="fab fa-linkedin-in fa-lg" title="LinkedIn"></i>
-      </a>
-    </span>
-    {% endif %}
-
-    {% if site.github_username %}
-    <span class="">
-      <a class="icon" href="https://github.com/{{ site.github_username }}">
-        <i class="fab fa-github fa-lg" title="GitHub"></i>
-      </a>
-    </span>
-    {% endif %}
-
-    {% if site.dribbble_username %}
+<footer class="container-large" id="footer">
+  <div class="flex-row">
+    <div class="flex-small one-half text-left">
+      {% if site.twitter_username %}
       <span class="">
-      <a href="https://dribbble.com/{{ site.dribbble_username }}" class="icon">
-          <i class="fab fa-dribbble fa-lg" title="Dribbble"></i>
+        <a class="icon" href="https://twitter.com/{{ site.twitter_username }}">
+          <i class="fab fa-twitter fa-lg nav-link" title="Twitter"></i>
         </a>
       </span>
-    {% endif %}
-  </div>
+      {% endif %}
 
-  <div class="">
-    <a class="" href="https://github.com/silviafuen/silviafuen.github.io">designed & developed by silviafuen © 2019</a>
+      {% if site.linkedin_username %}
+      <span class="">
+        <a class="icon" href="https://www.linkedin.com/in/{{ site.linkedin_username }}">
+          <i class="fab fa-linkedin-in fa-lg nav-link" title="LinkedIn"></i>
+        </a>
+      </span>
+      {% endif %}
+
+      {% if site.github_username %}
+      <span class="">
+        <a class="icon" href="https://github.com/{{ site.github_username }}">
+          <i class="fab fa-github fa-lg nav-link" title="GitHub"></i>
+        </a>
+      </span>
+      {% endif %}
+
+      {% if site.dribbble_username %}
+        <span class="">
+        <a href="https://dribbble.com/{{ site.dribbble_username }}" class="icon">
+            <i class="fab fa-dribbble fa-lg nav-link" title="Dribbble"></i>
+          </a>
+        </span>
+      {% endif %}
+    </div>
+
+    <div class="flex-large one-half text-right">
+      <a class="nav-link" href="https://github.com/silviafuen/silviafuen.github.io">silviafuen © 2022</a>
+    </div>
   </div>
 </footer>
