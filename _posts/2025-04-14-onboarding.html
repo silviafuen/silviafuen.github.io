@@ -8,9 +8,10 @@ permalink: onboarding
     <!--- TITLE ---------------------------------->
     <div class="flex-row">
         <div class="flex-large three-fourths">
-            <p><b>Capital One</b> - 2021</p>
+            <p><b>SimplePractice</b> - 2025</p>
             <h1>
-                Enrolling clinicians with multiple insurance partners at once
+                Setting up clinicians for practice success with a new approach
+                to onboarding
             </h1>
         </div>
         <div class="flex-small one-fourth text-right"></div>
@@ -20,162 +21,115 @@ permalink: onboarding
         <div class="flex-small">
             <h2>Overview</h2>
             <p>
-                The insurance experience had various hurdles that users needed
-                to jump – one of those being a hurdle of our own design! On
-                average, clinicians work with 4-6 insurance companies, and our
-                experience required them to manually enroll each one, forcing
-                them to repeat the process over and over and over again.
+                Early SimplePractice offered customers a Choose Your Own
+                Adventure experience, but as our product and customer base grew,
+                it became clear that this model was no longer working. We kept
+                receiving feedback from the clinicians using our product that
+                everything in our experience was just too confusing – and they
+                were right!
+            </p>
+            <p>
+                Our experience would throw new users into the deep end of the
+                insurance claim filing experience, with no introductory
+                onboarding or walkthrough. Clinicians would have to rely on a
+                help center guide full of screenshots to get them through
+                set-up. When I first joined the team, I walked through it
+                myself, realizing it took over 19 clicks and 7 pages of the
+                product to complete just the onboarding process. This was too
+                much effort and time for our users and after feedback and
+                review, it became one of our hypothesized reasons that
+                clinicians weren’t even attempting to use our insurance tools.
             </p>
         </div>
     </div>
-    <!--- OVERVIEW CONTI + IMAGE ---------------------------------->
-    <div class="flex-row">
-        <div class="flex-small one-half">
-            <p>
-                During a team onsite, we identified areas in our product that
-                were holding our customers back, and our enrollment process was
-                one of the biggest culprits. That area had been on the team’s
-                mind for awhile, begging for a redesign, so when the opportunity
-                to address enrollments arose, I jumped at the opportunity to
-                execute the vision I had for insurance.
-            </p>
-            <p>
-                The hope with the redesign was a reintroduction, transitioning
-                users from the idea that “Payers” was a settings section, but
-                rather a hub for all insurance payer info to live.
-            </p>
-        </div>
-        <div class="flex-small one-half gallery">
-            <a href="assets/callback-previous.png" class="big"
-                ><img src="assets/callback-previous.png" alt="" width="100%"
-            /></a>
-        </div>
-    </div>
-    <!--- GOAL, MY ROLE, WORK ---------------------------------->
+    <!--- GOALS ---------------------------------->
     <div class="flex-row">
         <div class="flex-small">
-            <h2>Our goal</h2>
+            <h2>Goals</h2>
             <p>
-                Our goal was that we wanted to decrease the time spent on
-                enrollments and aimed for at least a 20% reduction in the amount
-                of customer support tickets opened under the topic of enrollment
-                – many of which arose from the process itself.
+                Our aim was to make this short and educational for the
+                clinicians. For us, this looked like consolidating all of the
+                form fields into one space and teaching clinicians about why
+                this information mattered to their insurance process. We did
+                this because we wanted to do more than simply collect info, but
+                rather we wanted to empower them by removing the fear they had
+                when it came to working with insurance. Success with these types
+                of projects is hard to measure, because it’s so often a slow
+                burn success. Because of this we separated our measurements of
+                success into two metrics:
             </p>
-            <h2>My role & the work</h2>
-            <p>
-                We were a seasoned team with a very short timeline to execute a
-                big overhaul, so we hit the ground running with high def
-                designs. Because of the timeline and my dual role of Lead
-                Designer and PM for this project, I had no time to waste. I
-                wrote out eng requirements, had a senior PM review them, and
-                went to work on designs. A perk of doing double duty is that I
-                was able to work more quickly because I knew the project
-                requirements, and through this found that I really enjoyed
-                dipping into the PM mindset.
-            </p>
-            <p>
-                I started with broad design explorations, to ensure I wasn’t
-                boxing myself into a specific solution, all I knew was that I
-                wanted to narrow down to something that allowed a
-                multi-selection interaction. I’d also been having ongoing
-                sidebar conversations with our engineers about the possibility
-                of utilizing autofill for information we already had, so I
-                wanted to find a way to incorporate that as well.
-            </p>
+            <ul>
+                <li>
+                    Primary: Time required for completion of flow — This would
+                    show us where the experience might be too complicated or
+                    where we’d may be asking for too much information
+                </li>
+                <li>
+                    Secondary: Time to file first claim after flow completion —
+                    We knew we had done our job well, if they got here faster.
+                    Claim filing was our team’s overarching metric for the year,
+                    as it is the primary revenue driver.
+                </li>
+            </ul>
         </div>
     </div>
-    <!--div class="flex-row">
-          <div class="flex-small one-half">
-        <p>
-         I, alongside our design lead, worked on multiple version history control pages that displayed multiple applications, relevant changes to an application, their submission date, download button, and the ability to revert to previous applications. Some on the safe side, some on the adventurous side.
-          </p>
-        </div>
-        <div class="flex-small one-half gallery">
-          <a href="assets/callback-future.png" class="big"><img src="assets/callback-future.png" alt="" width="100%"></a>
-        </div>
-  </div>
-  <!--- DESIGN CHALLENGES ---------------------------------->
+
+    <!--- COMPLEXITIES & DEVELOPMENT  ---------------------------------->
     <div class="flex-row">
         <div class="flex-small">
-            <h2>Design explorations</h2>
+            <h2>Complexities</h2>
+            <p>
+                Because we serve an extensive set of user types with varying
+                access permissions, we had to configure what the experience
+                would be for a biller, practice owner, and clinician. We landed
+                on concealing some fields based on permission level, but keeping
+                the core content the same and educating all users – even if they
+                weren’t inputting info at every stage, their understanding of
+                the concepts mattered.
+            </p>
+            <p>
+                A high level question we had was, “how should the user feel
+                during this?” Using the qualitative research and feedback
+                comments from online communities, we landed on educating and
+                informing our audience. Time and time again, these users
+                expressed confusion and frustration about not understanding
+                terms or what the next step was with claim filing. Additionally,
+                on the technical end, our team wanted to push further, so when a
+                user dropped off, we saved all of their information. This
+                behavior wasn’t yet a pattern in our product and it was our
+                first time enabling it. We also integrated with the National NPI
+                Registry to auto-fill the form, based on their NPI ID the
+                clinician had given us, we’d populate what was given to the
+                national registry, making it less work for the clinician.
+            </p>
         </div>
     </div>
-    <div class="flex-row">
-        <div class="flex-small one-half">
-            <p>
-                I really value feedback, and when something I’m trying doesn’t
-                feel like it’s quite hitting the target, I like to turn to my
-                teammates. I went to my design peers in our larger finance
-                design team for feedback and after a few hours of collaboration,
-                we were confident in our new design. We knew moving away from a
-                table format and introducing a new card format would allow us
-                more real estate to show more info on the smaller screens our
-                users tend to use.
-            </p>
-            <p>
-                My first version of the design was met with a lot of valid
-                feedback from the org design team at large. There was a lot of
-                concern about the IA and confusion with design, and those other
-                voices and perspectives pushed me to keep iterating on it –
-                something I’m grateful for as I test new ideas and push my
-                designs to a new and better level. I worked closely with my
-                smaller finance design team, going back to the drawing board but
-                not straying too far from the design we’d been working with,
-                eventually landing on a horizontal card format that was more
-                simple. [visual of this cleaned up format]
-            </p>
-        </div>
-        <div class="flex-large one-half gallery">
-            <a href="assets/callback-intermediate.png" class="big"
-                ><img
-                    src="assets/callback-intermediate.png"
-                    width="100%"
-                    alt=""
-            /></a>
-        </div>
-    </div>
-    <!--- SOLUTION CONTI + CLOSING ---------------------------------->
-    <div class="flex-row">
-        <div class="flex-large">
-            <h2>What made this ✨cool✨</h2>
-            <p>
-                This project provided the opportunity to do a front-facing
-                visual overhaul, as well as a shift in the experience. Before
-                our redesign, a clinician had to enroll with 1 insurance at a
-                time (for context clinicians typically worked with 4-6 insurance
-                companies). The form required manual entry for everything,
-                despite some of the information already having been collected in
-                the clinician’s account – a frustrating experience that was
-                low-hanging fruit marked for improvement.
-            </p>
 
+    <!--- RESULTS  ---------------------------------->
+    <div class="flex-row">
+        <div class="flex-small">
+            <h2>RESULTS</h2>
             <p>
-                We moved to a more time-efficient flow that would autofill where
-                possible, and allowed multi-select of payers. Our goal was to
-                cut down on time spent doing this tedious task and get
-                clinicians filing claims sooner. This is a sister experience to
-                an existing insurance onboarding set-up we did earlier in the
-                year, so we kept with the theme of educating users on what each
-                step was without overwhelming them with terminology. The goal of
-                our family of experiences was to make insurance easier to accept
-                for private practices.
+                As of right now this project is currently released to a small
+                audience of 500 practices. We’ve seen little to no drop off on
+                this flow and increased claim filing from this group. Because of
+                its small scale success and us working out the bugs in this
+                stage, the team is preparing to launch it in late January 2026.
             </p>
-
-            <h2>Closing</h2>
+            <h3>Reflections</h3>
             <p>
-                This project was recently released to all of our users and we’re
-                already seeing positive early adopter feedback! The work we
-                created was very rewarding, and l really believe in the design
-                we delivered. In overhauling one experience, we were able to
-                also reimagine the main page and the insurance company
-                selection, two big spaces that are frequented by clinicians. In
-                doing double duty as both Lead Designer and PM proved to be
-                rewarding and challenging in its own right – on one hand, I
-                liked the PM mindset, but I ultimately missed having a product
-                partner to work with.
+                There was a lot more we could have introduced in this experience
+                that we chose not to, such as requiring more fields to be filled
+                out than what we did. This was because we had a concern that
+                customers would be hesitant sharing their NPI (a clinician’s
+                version of their SSN) in the same way that users of most
+                products are cautious about sharing their SSNs. I’d be
+                interested in seeing the metrics and fill rate to determine if
+                that was still our best choice.
             </p>
         </div>
     </div>
+
     <div class="clear"></div>
     <!--- OTHER PROJECTS ---------------------------------->
     <div class="flex-row padding-top">
